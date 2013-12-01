@@ -48,6 +48,9 @@ import com.android.settings.Utils;
 
 public class Notifications extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
+    private static final String PREF_LESS_NOTIFICATION_SOUNDS = "less_notification_sounds";
+
+    private ListPreference mAnnoyingNotifications;
     private ListPreference mTickerMode;
 
     @Override
@@ -67,6 +70,15 @@ public class Notifications extends SettingsPreferenceFragment implements OnPrefe
         mTickerMode.setValue(String.valueOf(tickerMode));
         mTickerMode.setSummary(mTickerMode.getEntry());
 
+	mAnnoyingNotifications = (ListPreference) findPreference(PREF_LESS_NOTIFICATION_SOUNDS);
+        int notificationThreshold = Settings.System.getInt(getContentResolver(),
+                Settings.System.MUTE_ANNOYING_NOTIFICATIONS_THRESHOLD, 0);
+        mAnnoyingNotifications.setValue(Integer.toString(notificationThreshold));
+        int valueIndex = mAnnoyingNotifications.findIndexOfValue(String.valueOf(notificationThreshold));
+        if (valueIndex > 0) {
+            mAnnoyingNotifications.setSummary(mAnnoyingNotifications.getEntries()[valueIndex]);
+        }
+        mAnnoyingNotifications.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -82,7 +94,17 @@ public class Notifications extends SettingsPreferenceFragment implements OnPrefe
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
 	 ContentResolver resolver = getActivity().getContentResolver();
-	 if (preference.equals(mTickerMode)) {
+	if (preference == mAnnoyingNotifications) {
+            String notificationThreshold = (String) newValue;
+            int notificationThresholdValue = Integer.parseInt(notificationThreshold);
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.MUTE_ANNOYING_NOTIFICATIONS_THRESHOLD, notificationThresholdValue);
+            int notificationThresholdIndex = mAnnoyingNotifications
+                    .findIndexOfValue(notificationThreshold);
+            mAnnoyingNotifications
+                    .setSummary(mAnnoyingNotifications.getEntries()[notificationThresholdIndex]);
+            return true;
+        } else if (preference.equals(mTickerMode)) {
             int tickerMode = Integer.parseInt(((String) newValue).toString());
             Settings.System.putIntForUser(getContentResolver(),
                     Settings.System.STATUS_BAR_SHOW_TICKER, tickerMode, UserHandle.USER_CURRENT);
