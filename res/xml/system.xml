@@ -17,38 +17,43 @@
 
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:title="@string/system_category"
-    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title="@string/system_category">
 
-         <org.aospextended.extensions.preference.CardviewPreference
-            android:key="general_tweaks"
-            android:fragment="org.aospextended.extensions.GeneralTweaks"
-            android:icon="@drawable/ic_general_tweaks"
-            android:title="@string/general_tweaks_title" />
+    <org.aospextended.extensions.preference.CardviewPreference
+        android:fragment="org.aospextended.extensions.GeneralTweaks"
+        android:icon="@drawable/ic_general_tweaks"
+        android:key="general_tweaks"
+        android:title="@string/general_tweaks_title"/>
 
+    <org.aospextended.extensions.preference.CardviewPreference
+        android:fragment="org.aospextended.extensions.Animations"
+        android:icon="@drawable/ic_animations"
+        android:key="animations"
+        android:title="@string/animations_title"/>
 
-         <org.aospextended.extensions.preference.CardviewPreference
-            android:key="buttons"
-            android:fragment="org.aospextended.extensions.Buttons"
-            android:icon="@drawable/ic_buttons"
-            android:title="@string/buttons_title" />
+    <org.aospextended.extensions.preference.CardviewPreference
+        android:fragment="org.aospextended.extensions.Buttons"
+        android:icon="@drawable/ic_buttons"
+        android:key="buttons"
+        android:title="@string/buttons_title"/>
 
-         <org.aospextended.extensions.preference.CardviewPreference
-            android:key="recents_ui"
-            android:fragment="org.aospextended.extensions.RecentsUI"
-            android:icon="@drawable/ic_recents_ui"
-            android:title="@string/recents_ui_title" />
+    <org.aospextended.extensions.preference.CardviewPreference
+        android:fragment="org.aospextended.extensions.RecentsUI"
+        android:icon="@drawable/ic_recents_ui"
+        android:key="recents_ui"
+        android:title="@string/recents_ui_title"/>
 
-         <org.aospextended.extensions.preference.CardviewPreference
-            android:key="privacy_guard_manager"
-            android:fragment="com.android.settings.privacyguard.PrivacyGuardManager"
-            android:icon="@drawable/ic_settings_appops"
-            android:title="@string/app_ops_category" />
+    <org.aospextended.extensions.preference.CardviewPreference
+        android:fragment="com.android.settings.privacyguard.PrivacyGuardManager"
+        android:icon="@drawable/ic_settings_appops"
+        android:key="privacy_guard_manager"
+        android:title="@string/app_ops_category"/>
 
-         <org.aospextended.extensions.preference.CardviewPreference
-            android:key="systemappremover"
-            android:fragment="org.aospextended.extensions.SystemappRemover"
-            android:icon="@drawable/ic_systemappremover"
-            android:title="@string/system_app_remover" />
+    <org.aospextended.extensions.preference.CardviewPreference
+        android:fragment="org.aospextended.extensions.SystemappRemover"
+        android:icon="@drawable/ic_systemappremover"
+        android:key="systemappremover"
+        android:title="@string/system_app_remover"/>
 
 </PreferenceScreen>
