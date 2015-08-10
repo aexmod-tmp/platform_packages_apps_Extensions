@@ -636,5 +636,8 @@
     <string name="ring_home_button_title">Answer call by Home button</string>
     <string name="ring_home_button_summary">Allow answer call by Home button when device is ringing</string>
 
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="three_finger_gesture">Three finger gesture</string>
+    <string name="three_finger_gesture_summary">Swipe three finger to screenshot</string>
 </resources>
 

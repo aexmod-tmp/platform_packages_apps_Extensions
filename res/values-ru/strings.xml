@@ -574,5 +574,10 @@
   <string name="ring_home_button_title">Ответ на звонок кнопкой Домой</string>
   <string name="ring_home_button_summary">При входящем звонке кнопка Домой используется для ответа</string>
 
+  <!-- Three-fingers-swipe to screenshot -->
+  <string name="three_finger_gesture">Скриншот тремя пальцами</string>
+  <string name="three_finger_gesture_summary">Свайп тремя пальцами по экрану для скриншота</string>
+
+
 </resources>
 
