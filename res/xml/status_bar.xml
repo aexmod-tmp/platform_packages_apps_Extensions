@@ -29,6 +29,13 @@
                 android:targetPackage="com.android.systemui"
                 android:targetClass="com.android.systemui.tuner.StatusbarItemsActivity" />
     </Preference>
+
+    <Preference
+        android:key="clock_options"
+        android:title="@string/status_bar_show_clock_title"
+	android:icon="@drawable/ic_settings_date_time"
+        android:fragment="org.aospextended.extensions.ClockOptions" />
+
          <Preference
             android:key="traffic"
             android:fragment="org.aospextended.extensions.Traffic"
