@@ -559,5 +559,17 @@
     <string name="smart_pulldown_none">без уведомлений</string>
     <string name="smart_pulldown_dismissable">без удаляемых</string>
     <string name="smart_pulldown_ongoing">без постоянных</string>
+
+  <!-- SlimSizer  -->
+  <string name="caution">Внимание!</string>
+  <string name="sizer_message_startup">Эта программа позволяет удалять системные приложения. Используйте с осторожностью и удаляйте только то, что можно удалить без последствий.</string>
+  <string name="sizer_message_delete">Вы уверены?</string>
+  <string name="btn_delete">Сейчас же удалить выбранные приложения!</string>
+  <string name="delete_progress_title">Удаление</string>
+  <string name="delete_progress">Выбранные файлы были удалены...</string>
+  <string name="sizer_message_noselect">Ничего не выбрано.</string>
+  <string name="system_app_remover">Удаление сист. приложений</string>
+  <string name="sizer_message_error">Не удалось удалить, проверьте наличие прав суперпользователя</string>
+  <string name="sizer_message_success">Успешно</string>
 </resources>
 
