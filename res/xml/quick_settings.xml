@@ -131,11 +131,18 @@
             android:entryValues="@array/smart_pulldown_values"
             android:persistent="false" />
 
+    <org.aospextended.extensions.preference.SystemSettingSwitchPreference
+        android:key="qs_running_services_toggle"
+        android:title="@string/qs_running_services_title"
+        android:summary="@string/qs_running_services_summary"
+        android:defaultValue="false" />
+
     </PreferenceCategory>
 
   <PreferenceCategory
         android:key="qs_layout_category"
         android:title="@string/qs_layout_category">
+
 
     <org.aospextended.extensions.preference.CustomSeekBarPreference
         android:key="qs_rows_portrait"
