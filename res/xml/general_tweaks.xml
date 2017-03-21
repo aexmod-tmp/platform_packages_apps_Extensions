@@ -94,6 +94,11 @@
 
     </PreferenceCategory>
 
+    <Preference
+        android:key="suspend_actions"
+        android:title="@string/screen_state_toggles_title"
+        android:fragment="org.aospextended.extensions.SuspendActions" />
+
      <Preference
          android:key="wakelock_blocker"
          android:fragment="org.aospextended.extensions.WakeLockBlocker"
