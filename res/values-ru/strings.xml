@@ -922,5 +922,11 @@
 
     <string name="weather_title">Погода</string>
     <string name="weather_summary">Настройки погоды</string>
+
+    <!-- Sensor block per-package -->
+    <string name="sensor_block_title">Блокировка сенсора в приложениях</string>
+    <string name="sensor_block_summary">Блокировать доступ к определенным датчикам в некоторых приложениях для экономии заряда батареи.</string>
+
+
 </resources>
 
