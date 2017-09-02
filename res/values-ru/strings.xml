@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2014-2016 The Dirty Unicorns Project
+      Copyright (C) 2016 AospExtended ROM Project
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    
+    <!-- General app strings -->
+	<string name="extensions_title">Расширения</string>
+	<string name="add">Добавить</string>
+	<string name="advanced">Дополнительно</string>
+	<string name="choose_app">Выбрать приложение</string>
+	<string name="general_category">Общие</string>
+	<string name="cancel">Отмена</string>
+    <string name="gestures_category">Жесты</string>
+    <string name="music_category">Музыка</string>
+    <string name="security_category">Безопасность</string>
+    <string name="hardware_category">Оборудование</string>
+    <string name="aosp_recents_category">AOSP запущенные приложения</string>
+    <string name="light_category">Светодиод</string>
+    <string name="dlg_ok">OK</string>
+    <string name="attention">Внимание</string>
+    <string name="loading">Загрузка\u2026</string>
+    <string name="reset">Сбросить</string>
+    <string name="reset_colors">Сбросить цвета</string>
+    <string name="reset_android">Андроид</string>
+    <string name="text_title">Текст</string>
+    <string name="icon_title">Иконка</string>
+    <string name="color_title">Цвет</string>
+    <string name="colors_title">Цвета</string>
+
+    <!-- Extensions categories -->
+	<string name="recents_category">Запущенные</string>
+    <string name="status_bar_category">Строка состояния</string>
+    <string name="notifications_panel_category">Панель уведомлений</string>
+    <string name="system_category">Система</string>
+    <string name="lockscreen_category">Экран блокировки</string>
+    <string name="navigation_category">Навигация</string>
+    <string name="build_tweaks_summary_title">Расширенные настройки</string>
+
+    <!-- Frags -->
+    <!-- General Tweaks -->
+    <string name="general_tweaks_title">Основные настройки</string>
+
+    <!-- Network traffic -->
+    <string name="traffic_title">Индикация траффика</string>
+
+    <!-- Misc Extensions -->
+    <string name="misc_extensions_title">Различные расширения</string>
+
+    <!-- Recents UI -->
+    <string name="recents_ui_title">Запущенные приложения</string>
+
+    <!-- Lockscreen UI -->
+    <string name="lockscreen_ui_title">Экран блокировки</string>
+
+    <!-- Statusbar Iten -->
+    <string name="statusbar_items_category">Элементы строки состояния</string>
+
+    <!-- Notifications -->
+    <string name="notifications_title">Уведомления</string>
+
+    <!-- Navigation -->
+    <string name="navigationbar_settings_title">Панель навигации</string>
+
+    <!-- Quick Settings -->
+    <string name="quick_settings_title">Быстрые настройки</string>
+
+    <!-- Buttons -->
+    <string name="buttons_title">Кнопки</string>
+
+    <!-- App Ops -->
+    <string name="app_ops_category">Операции в приложениях</string>
+
+    <!-- App info dialog -->
+    <string name="extensions_dialog_title">Help us help you!</string>
+    <string name="extensions_dialog_message">If you find a bug with any of these settings, post in the Bug Reports section of our Google+ page. You MUST include the following when posting a bug report:\n\n1. A logcat or last_kmsg\n2. Kernel and mods used\n3. Useful information\n\nIf you fail to report something adequately, DO NOT expect things to be fixed.</string>
+    <string name="extensions_dialog_toast">READ THE WHOLE THING!</string>
+
+	<!-- Color Picker -->
+	<string name="dialog_color_picker">Палитра</string>
+	<string name="press_color_to_apply">Нажать на цвет внизу для применения</string>
+	<string name="arrow_right">→</string>
+	<string name="arrow_down">↓</string>
+	<string name="hex">Hex:</string>
+	<string name="hex_hint">#ff000000</string>
+	<string name="set">Назначить</string>
+	<string name="color_default">По умолчанию</string>
+
+    <!-- Battery light -->
+    <string name="battery_light_settings">Светодиод заряда батареи</string>
+    <string name="battery_light_enable">Светодиод батареи</string>
+    <string name="battery_light_allow_on_dnd_title">Батарея в режиме Не беспокоить</string>
+    <string name="battery_light_low_blinking_title">Моргать при низком заряде</string>
+    <string name="battery_light_cat">Цвет светодиода во время зарядки</string>
+    <string name="battery_light_low_color">Низкий заряд</string>
+    <string name="battery_light_medium_color">Средний заряд</string>
+    <string name="battery_light_full_color">Почти заряженная</string>
+    <string name="battery_light_reallyfull_color">Полный заряд</string>
+
+    <!-- Network traffic -->
+    <string name="network_traffic_title">Сетевой траффик</string>
+    <string name="network_traffic_type">Виберите тип траффика</string>
+    <string name="show_network_traffic_up">Исходящий</string>
+    <string name="show_network_traffic_down">Входящий</string>
+    <string name="show_network_traffic_all">Исходящий и входящий</string>
+    <string name="network_traffic_state_title">Отображение траффика в строке состоянии</string>
+    <string name="network_traffic_autohide_threshold_title">Скрыть индикатор при пороге (KB/s)</string>
+
+    <!-- Recents panel settings -->
+    <string name="show_clear_all_recents_button_title">Кнопка «Очистить всё»</string>
+    <string name="show_clear_all_recents_button_summary">Показывать кнопку \"Очистить всё\"</string>
+    <string name="recents_clear_all_location_title">Расположение кнопки \"Очистить все\"</string>
+    <string name="recents_clear_all_location_top_right">Вверху справа</string>
+    <string name="recents_clear_all_location_top_left">Вверху слева</string>
+    <string name="recents_clear_all_location_top_center">Вверху по центру</string>
+    <string name="recents_clear_all_location_bottom_right">Снизу справа</string>
+    <string name="recents_clear_all_location_bottom_left">Снизу слева</string>
+    <string name="recents_clear_all_location_bottom_center">Снизу по центру</string>
+
+    <!-- Power notification controls -->
+    <string name="power_notification_controls_title">Тонкие настройки уведомлений</string>
+    <string name="power_notification_controls_summary">Настройка важности уведомлений</string>
+
+    <!-- Quick Settings brightness slider -->
+    <string name="qs_brightness_slider_title">Слайдер яркости</string>
+    <string name="qs_brightness_slider_summary">Показывать слайдер яркости в панели быстрых настроек</string>
+    <string name="brightness_icon_title">Значок яркости</string>
+    <string name="brightness_icon_summary">Показать значок включения авто-яркости слева от слайдера</string>
+
+    <string name="toast_icon_title">App\'s icon in toast</string>
+    <string name="toast_icon_summary">Display the app icon corresponding with the toast</string>
+
+    <!-- Power Menu -->
+    <string name="power_menu_title">Power menu</string>
+    <string name="power_menu_title_summary">View or change power menu entries</string>
+    <string name="powermenu_screenshot">Screenshot</string>
+    <string name="powermenu_power">Power</string>
+    <string name="powermenu_restart">Restart</string>
+    <string name="powermenu_restart_recovery">Advanced restart</string>
+    <string name="powermenu_airplane">Airplane</string>
+    <string name="powermenu_settings">Settings</string>
+    <string name="powermenu_lockdown">Lock Down</string>
+    <string name="powermenu_soundpanel">Sound Panel</string>
+    <string name="powermenu_users">Users</string>
+    <string name="powermenu_torch">Flashlight</string>
+
+    <!-- Power menu on secure lockscreen -->
+    <string name="lockscreen_power_menu_disabled_title">Power menu when locked</string>
+    <string name="lockscreen_power_menu_disabled_summary">Disable power menu on secure lockscreen</string>
+
+    <string name="recents_show_membar_title">Memory bar</string>
+    <string name="recents_show_membar_summary">Show a bar with the device\'s available memory</string>
+
+    <!-- Quick pull down-->
+    <string name="quick_pulldown_title">Быстрый досбуп</string>
+    <string name="quick_pulldown_summary">%1$ край строки состояния при опускании вниз открывает панель быстрых настроек</string>
+    <string name="quick_pulldown_summary_always">Всегда открывать панель быстрых настроек при опускании вниз строки состояния</string>
+    <string name="quick_pulldown_off">Выкл.</string>
+    <string name="quick_pulldown_left">Левий</string>
+    <string name="quick_pulldown_right">Правый</string>
+    <string name="quick_pulldown_always">Всегда</string>
+
+    <!-- Smart pulldown-->
+    <string name="smart_pulldown_title">Smart pulldown</string>
+    <string name="smart_pulldown_summary">Open quick settings when there are %1$s notifications</string>
+    <string name="smart_pulldown_none_summary">Open quick settings when there are no notifications</string>
+    <string name="smart_pulldown_off">Off</string>
+    <string name="smart_pulldown_none">no notifications</string>
+    <string name="smart_pulldown_dismissable">no dismissable</string>
+    <string name="smart_pulldown_ongoing">no ongoing</string>
+
+    <!-- Navbar tuner -->
+    <string name="navbar_tuner_title">Navbar Tuner</string>
+
+    <!-- Lockscreen icons -->
+    <string name="lockscreen_tuner_title">Lockscreen Tuner</string>
+    <string name="hide_lockscreen_items_title">Lockscreen items</string>
+
+    <!-- Force expanded notifications -->
+    <string name="force_expanded_notifications_title">Force Expanded Notifications</string>
+    <string name="force_expanded_notifications_summary">Available only for apps that support expanded notifications</string>
+
+    <!-- Double Tap -->
+    <string name="double_tap_sleep_navbar">Double tap to sleep on navbar</string>
+    <string name="double_tap_sleep_navbar_summary">Double tap on navbar to put the device to sleep</string>
+    <!-- Double Tap Lockscreen to Sleep -->
+    <string name="double_tap_to_sleep_lockscreen_title">Double tap to sleep on lockscreen</string>
+    <string name="double_tap_to_sleep_lockscreen_summary">Double tap on the top third or bottom shortcut area of the lock screen to put the device to sleep</string>
+    <!-- Double tap-to-sleep -->
+    <string name="double_tap_to_sleep_title">Double tap to sleep on status bar</string>
+    <string name="double_tap_to_sleep_summary">Double tap on status bar to put the device to sleep</string>
+    <!-- Brightness control -->
+    <string name="status_bar_toggle_brightness">Brightness control</string>
+    <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across the status bar</string>
+
+    <!-- Lockscreen battery info indicator  -->
+    <string name="lockscreen_battery_info_title">Lockscreen charging info</string>
+    <string name="lockscreen_battery_info_summary">Display negociated charger max current and voltage and battery temperature on lockscreen while charging</string>
+
+    <!-- Media art -->
+    <string name="media_art_title">Media cover art</string>
+    <string name="media_art_summary">Enable media cover art on the lockscreen</string>
+
+   <!-- Buttons title -->
+    <string name="volume_category">Volume Rocker</string>
+    <string name="power_category">Power Button</string>
+
+    <!-- Volume button orientation based on current rotation -->
+    <string name="swap_volume_buttons_title">Swap volume rocker orientation</string>
+    <string name="swap_volume_buttons_summary">Adjust the rocker orientation based on current rotation</string>
+
+    <!-- Volume key controls media stream -->
+    <string name="volume_keys_control_media_stream_title">Volume keys control media volume</string>
+    <string name="volume_keys_control_media_stream_summary">Force volume keys to control media stream</string>
+
+    <!-- Volume rocker music control -->
+    <string name="volume_rocker_music_controls_title">Playback control</string>
+    <string name="volume_rocker_music_controls_summary">When the screen is off, long-pressing the volume keys will seek music tracks</string>
+
+    <!-- Language options - Volume rocker cursor control -->
+    <string name="cursor_section_header">Cursor</string>
+    <string name="volume_key_cursor_control_title">Volume key cursor control</string>
+    <string name="volume_key_cursor_control_off">Disabled</string>
+    <string name="volume_key_cursor_control_on">Volume up/down moves cursor left/right</string>
+    <string name="volume_key_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
+
+    <!-- Volume rocker wake -->
+    <string name="volume_rocker_wake_title">Volume rocker wake</string>
+    <string name="volume_rocker_wake_summary">Pressing the volume keys will wake your device</string>
+
+    <!-- The volume key answer -->
+    <string name="volume_answer_call_title">Volume keys answer</string>
+    <string name="volume_answer_call_summary">Answer the call when volume keys pressed</string>
+
+    <!-- QS rows and columns -->
+    <string name="qs_layout_category">QS tiles layout</string>
+    <string name="qs_rows_columns_title">QS rows and columns</string>
+    <string name="qs_rows_portrait_title">Tiles rows on portrait</string>
+    <string name="qs_rows_landscape_title">Tiles rows on landscape</string>
+    <string name="qs_columns_portrait_title">Tiles columns on portrait</string>
+    <string name="qs_columns_landscape_title">Tiles columns on landscape</string>
+
+    <!-- Launch music player when headset is connected -->
+    <string name="headset_connect_player_title">Launch music app on headset connection</string>
+    <string name="headset_connect_player_disabled">Disabled</string>
+    <string name="headset_connect_player_wired">When wired headset is plugged in</string>
+    <string name="headset_connect_player_bt_no_carkit">When BT headset (no carkit) is plugged in</string>
+    <string name="headset_connect_player_bt">When BT headset is plugged in</string>
+    <string name="headset_connect_player_both_no_carkit">When wired or BT headset (no carkit) is plugged in</string>
+    <string name="headset_connect_player_both">When wired or BT headset is plugged in</string>
+
+    <!-- Headset ringtone audio focus -->
+    <string name="ringtone_focus_mode_title">Where to play ringtones from</string>
+    <string name="ringtone_focus_mode_dynamic">From headset if connected and playing music</string>
+    <string name="ringtone_focus_mode_stock">"From speakerphone (aosp default)"</string>
+
+    <!-- Heads up -->
+    <string name="headsup_category">HeadsUp Settings</string>
+    <string name="heads_up_notifications">Heads up</string>
+    <string name="summary_heads_up_enabled">Pop-up notifications are enabled</string>
+    <string name="summary_heads_up_disabled">Pop-up notifications are disabled</string>
+    <string name="add_heads_up_package">Add app</string>
+    <string name="add_heads_up_stoplist_summary">Disable heads up notifications in these applications</string>
+    <string name="add_heads_up_blacklist_summary">Disable heads up from these applications</string>
+    <string name="heads_up_stoplist_title">Stoplist</string>
+    <string name="heads_up_blacklist_title">Blacklist</string>
+    <string name="profile_choose_app">Choose app</string>
+    <string name="dialog_delete_title">Delete</string>
+    <string name="dialog_delete_message">Remove selected item?</string>
+
+    <!-- Heads up timeout -->
+    <string name="heads_up_time_out_title">Time out</string>
+    <string name="heads_up_time_out_summary">Peeking notifications will show for <xliff:g id="number">%d</xliff:g> seconds</string>
+    <string name="heads_up_time_out_2sec">2 seconds</string>
+    <string name="heads_up_time_out_4sec">4 seconds</string>
+    <string name="heads_up_time_out_5sec">5 seconds</string>
+    <string name="heads_up_time_out_6sec">6 seconds</string>
+    <string name="heads_up_time_out_8sec">8 seconds</string>
+    <string name="heads_up_time_out_10sec">10 seconds</string>
+
+    <!-- Heads up snooze -->
+    <string name="heads_up_snooze_title">Snooze timer</string>
+    <string name="heads_up_snooze_summary_one_minute">Swiping up on peeking notifications will snooze heads up from that application for 1 minute</string>
+    <string name="heads_up_snooze_summary">Swiping up on peeking notifications will snooze heads up from that application for <xliff:g id="number">%d</xliff:g> minutes</string>
+    <string name="heads_up_snooze_disabled_summary">Snooze timer is disabled</string>
+    <string name="heads_up_snooze_1min">1 minute</string>
+    <string name="heads_up_snooze_5min">5 minutes</string>
+    <string name="heads_up_snooze_10min">10 minutes</string>
+    <string name="heads_up_snooze_15min">15 minutes</string>
+    <string name="heads_up_snooze_20min">20 minutes</string>
+
+    <!-- Incall vibrate options -->
+    <string name="incall_vibration_category">In-call vibration options</string>
+    <string name="incall_vibrate_connect_title">Vibrate on connect</string>
+    <string name="incall_vibrate_call_wait_title">Vibrate on call waiting</string>
+    <string name="incall_vibrate_disconnect_title">Vibrate on disconnect</string>
+
+    <!-- Disabling FC notifications -->
+    <string name="disable_fc_notifications_title">Diable FC Notifications</string>
+    <string name="disable_fc_notifications_summary">This will hide all force close notificaitons</string>
+
+    <!-- Statusbar ticker -->
+    <string name="ticker_screen_title">Ticker</string>
+    <string name="ticker_mode_title">Statusbar notification ticker</string>
+    <string name="ticker_disabled">Disabled</string>
+    <string name="ticker_enabled">Notification ticker</string>
+    <string name="ticker_media_enabled">Notification and music ticker</string>
+
+    <string name="recents_icon_pack_title">Icon Pack</string>
+    <string name="recents_icon_pack_summary">Apply a custom icon pack for Recents panel</string>
+    <string name="no_iconpacks_summary">No icon packs installed</string>
+    <string name="dialog_pick_iconpack_title">Pick icon pack</string>
+    <string name="default_iconpack_title">Default icons</string>
+
+    <!-- fingerprint authentication vibration -->
+    <string name="fprint_sucess_vib_title">Вибрация при авторизации</string>
+    <string name="fprint_sucess_vib_summary">Вибрировать при успешной авторизации отпечатком пальца</string>
+    <string name="fprint_error_vib_title">Вибрация при ошибке авторизации</string>
+    <string name="fprint_error_vib_summary">Вибрировать при ошибке авторизации отпечатком пальца</string>
+
+    <!-- MTP Dirty Hack -->
+    <string name="enable_mtp_dirtyhack_title">MTP вместо Зарядки</string>
+    <string name="enable_mtp_dirtyhack_summary">Включить MTP вместо Зарядки при подключении к ПК</string>
+
+</resources>
+

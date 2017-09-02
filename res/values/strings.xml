@@ -323,6 +323,7 @@
     <string name="dialog_pick_iconpack_title">Pick icon pack</string>
     <string name="default_iconpack_title">Default icons</string>
 
+<<<<<<< HEAD
     <!-- Slim Recents panel -->
     <string name="slim_recents_title">Slim recents</string>
     <string name="use_slim_recents_title">Use alternative recents panel</string>
@@ -529,5 +530,15 @@
     <string name="smartbar_custom_icon_size_title">Custom icon scaling</string>
     <string name="one_handed_mode_title">One handed mode</string>
     <string name="one_handed_mode_summary">Allows swiping on the navigation bar to enable one handed mode</string>
+
+    <!-- Fingerprint authentication vibration -->
+    <string name="fprint_sucess_vib_title">Fingerprint authentication vibration</string>
+    <string name="fprint_sucess_vib_summary">Vibrate on successful fingerprint authentication</string>
+    <string name="fprint_error_vib_title">Fingerprint error vibration</string>
+    <string name="fprint_error_vib_summary">Vibrate on error fingerprint authentication</string>
+
+    <!-- MTP Dirty Hack -->
+    <string name="enable_mtp_dirtyhack_title">MTP instead Charging</string>
+    <string name="enable_mtp_dirtyhack_summary">Enable MTP instead Charging after connect to PC</string>
 
 </resources>
