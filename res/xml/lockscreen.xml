@@ -27,6 +27,11 @@
             android:icon="@drawable/ic_lockscreen_ui"
             android:title="@string/lockscreen_ui_title" />
 
+    <Preference
+        android:key="lockscreen_weather"
+        android:title="@string/lock_screen_weather_settings_title"
+        android:fragment="org.aospextended.extensions.LockScreenWeatherSettings" />
+
 
 </PreferenceScreen>
 
