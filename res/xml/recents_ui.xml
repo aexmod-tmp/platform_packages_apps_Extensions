@@ -15,7 +15,6 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/recents_ui_title">
-
     <PreferenceCategory
         android:key="recents_ui_aosp_recents_category"
         android:title="@string/aosp_recents_category">
@@ -49,6 +48,15 @@
         android:entries="@array/immersive_recents_entries"
         android:entryValues="@array/immersive_recents_values"
         android:persistent="false" />
+
+     <Preference
+        android:key="hide_app_from_recents"
+        android:title="@string/hide_apps_from_recents_title"
+        android:summary="@string/hide_apps_from_recents_summary" >
+             <intent android:action="android.intent.action.MAIN"
+                 android:targetPackage="com.android.settings"
+                 android:targetClass="org.aospextended.extensions.HAFRAppListActivity" />
+     </Preference>
     </PreferenceCategory>
 
 </PreferenceScreen>
