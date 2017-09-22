@@ -722,5 +722,11 @@
     <string name="screen_state_on_delay_title">Screen On actions delay</string>
     <string name="screen_state_on_delay_summary">Number of minutes to wait before performing actions after screen on</string>
 
+    <!-- MediaScanner behavior on boot -->
+    <string name="media_scanner_on_boot_title">MediaScanner behavior on boot</string>
+    <string name="media_scanner_on_boot_enabled">Scan media</string>
+    <string name="media_scanner_on_boot_ask">Ask to scan (notification)</string>
+    <string name="media_scanner_on_boot_disabled">Do not scan media</string>
+
 </resources>
 

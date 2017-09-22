@@ -651,5 +651,12 @@
   <string name="screen_state_off_delay_summary">Отложить действия при выключении экрана на указанное количество секунд</string>
   <string name="screen_state_on_delay_title">Отложить действия при включении экрана</string>
   <string name="screen_state_on_delay_summary">Отложить действия при включении экрана на указанное количество секунд</string>
+
+  <!-- MediaScanner behavior on boot -->
+  <string name="media_scanner_on_boot_title">Поведение MediaScanner при загрузке</string>
+  <string name="media_scanner_on_boot_enabled">Сканировать медиа</string>
+  <string name="media_scanner_on_boot_ask">Запросить сканирование (уведомление)</string>
+  <string name="media_scanner_on_boot_disabled">Не сканировать медиа</string>
+
 </resources>
 

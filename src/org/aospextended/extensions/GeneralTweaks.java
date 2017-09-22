@@ -51,10 +51,12 @@ public class GeneralTweaks extends SettingsPreferenceFragment implements OnPrefe
 
     private static final String INCALL_VIB_OPTIONS = "incall_vib_options";
     private static final String SCREEN_OFF_ANIMATION = "screen_off_animation";
+    private static final String MEDIA_SCANNER_ON_BOOT = "media_scanner_on_boot";
 
     private PreferenceCategory mLedsCategory;
     private Preference mChargingLeds;
     private ListPreference mScreenOffAnimation;
+    private ListPreference mMSOB;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -88,6 +90,13 @@ public class GeneralTweaks extends SettingsPreferenceFragment implements OnPrefe
         mScreenOffAnimation.setSummary(mScreenOffAnimation.getEntry());
         mScreenOffAnimation.setOnPreferenceChangeListener(this);
 
+        // MediaScanner behavior on boot
+        mMSOB = (ListPreference) findPreference(MEDIA_SCANNER_ON_BOOT);
+        int mMSOBValue = Settings.System.getInt(resolver,
+                Settings.System.MEDIA_SCANNER_ON_BOOT, 0);
+        mMSOB.setValue(String.valueOf(mMSOBValue));
+        mMSOB.setSummary(mMSOB.getEntry());
+        mMSOB.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -110,7 +119,14 @@ public class GeneralTweaks extends SettingsPreferenceFragment implements OnPrefe
             int valueIndex = mScreenOffAnimation.findIndexOfValue(value);
             mScreenOffAnimation.setSummary(mScreenOffAnimation.getEntries()[valueIndex]);
             return true;
-	}        
+	} else if (preference == mMSOB) {
+            int value = Integer.parseInt(((String) newValue).toString());
+            Settings.System.putInt(resolver,
+                    Settings.System.MEDIA_SCANNER_ON_BOOT, value);
+            mMSOB.setValue(String.valueOf(value));
+            mMSOB.setSummary(mMSOB.getEntries()[value]);
+            return true; 
+	}
 	    return false;
     }
 }
