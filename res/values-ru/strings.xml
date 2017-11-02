@@ -141,29 +141,29 @@
     <string name="brightness_icon_title">Значок яркости</string>
     <string name="brightness_icon_summary">Показать значок включения авто-яркости слева от слайдера</string>
 
-    <string name="toast_icon_title">App\'s icon in toast</string>
-    <string name="toast_icon_summary">Display the app icon corresponding with the toast</string>
+     <string name="toast_icon_title">Значок всплыюващих уведомлений</string>
+     <string name="toast_icon_summary">Показывать значек приложения соответствующего всплывающему уведомлению</string>
 
     <!-- Power Menu -->
-    <string name="power_menu_title">Power menu</string>
-    <string name="power_menu_title_summary">View or change power menu entries</string>
-    <string name="powermenu_screenshot">Screenshot</string>
-    <string name="powermenu_power">Power</string>
-    <string name="powermenu_restart">Restart</string>
-    <string name="powermenu_restart_recovery">Advanced restart</string>
-    <string name="powermenu_airplane">Airplane</string>
-    <string name="powermenu_settings">Settings</string>
-    <string name="powermenu_lockdown">Lock Down</string>
-    <string name="powermenu_soundpanel">Sound Panel</string>
-    <string name="powermenu_users">Users</string>
-    <string name="powermenu_torch">Flashlight</string>
+    <string name="power_menu_title">Меню питания</string>
+    <string name="power_menu_title_summary">Посмотреть или изменить меню кнопки питания</string>
+    <string name="powermenu_screenshot">Скриншот</string>
+    <string name="powermenu_power">Выключить</string>
+    <string name="powermenu_restart">Перезапустить</string>
+    <string name="powermenu_restart_recovery">Дополнительно</string>
+    <string name="powermenu_airplane">Режим полёта</string>
+    <string name="powermenu_settings">Настройски</string>
+    <string name="powermenu_lockdown">Блокировать устр.</string>
+    <string name="powermenu_soundpanel">Звуковая панель</string>
+    <string name="powermenu_users">Пользователи</string>
+    <string name="powermenu_torch">Фонарь</string>
 
     <!-- Power menu on secure lockscreen -->
-    <string name="lockscreen_power_menu_disabled_title">Power menu when locked</string>
-    <string name="lockscreen_power_menu_disabled_summary">Disable power menu on secure lockscreen</string>
+    <string name="lockscreen_power_menu_disabled_title">Меню питания на экране блокировки</string>
+    <string name="lockscreen_power_menu_disabled_summary">Отключить меню питания на экране блокировки</string>
 
-    <string name="recents_show_membar_title">Memory bar</string>
-    <string name="recents_show_membar_summary">Show a bar with the device\'s available memory</string>
+    <string name="recents_show_membar_title">RAM панель</string>
+    <string name="recents_show_membar_summary">Показывать шкалу использования ОЗУ</string>
 
     <!-- Quick pull down-->
     <string name="quick_pulldown_title">Быстрый досбуп</string>
@@ -175,156 +175,156 @@
     <string name="quick_pulldown_always">Всегда</string>
 
     <!-- Smart pulldown-->
-    <string name="smart_pulldown_title">Smart pulldown</string>
-    <string name="smart_pulldown_summary">Open quick settings when there are %1$s notifications</string>
-    <string name="smart_pulldown_none_summary">Open quick settings when there are no notifications</string>
-    <string name="smart_pulldown_off">Off</string>
-    <string name="smart_pulldown_none">no notifications</string>
+    <string name="smart_pulldown_title">Быстрый доступ</string>
+    <string name="smart_pulldown_summary">Открывать быстрые настройки, когда есть %1$s уведомления</string>
+    <string name="smart_pulldown_none_summary">Открывать быстрей настройка, когда нет уведомлений</string>
+    <string name="smart_pulldown_off">Откл.</string>
+    <string name="smart_pulldown_none">нет уведомлений</string>
     <string name="smart_pulldown_dismissable">no dismissable</string>
     <string name="smart_pulldown_ongoing">no ongoing</string>
 
     <!-- Navbar tuner -->
-    <string name="navbar_tuner_title">Navbar Tuner</string>
+    <string name="navbar_tuner_title">Панель навигации</string>
 
     <!-- Lockscreen icons -->
-    <string name="lockscreen_tuner_title">Lockscreen Tuner</string>
-    <string name="hide_lockscreen_items_title">Lockscreen items</string>
+    <string name="lockscreen_tuner_title">Экран блокировки</string>
+    <string name="hide_lockscreen_items_title">Элементы экарана блокировки</string>
 
     <!-- Force expanded notifications -->
-    <string name="force_expanded_notifications_title">Force Expanded Notifications</string>
-    <string name="force_expanded_notifications_summary">Available only for apps that support expanded notifications</string>
-
+    <string name="force_expanded_notifications_title">Принудительно расширять уведомления</string>
+    <string name="force_expanded_notifications_summary">Доступно только для приложений, поддерживающих расширенные уведомления</string>
+    
     <!-- Double Tap -->
-    <string name="double_tap_sleep_navbar">Double tap to sleep on navbar</string>
-    <string name="double_tap_sleep_navbar_summary">Double tap on navbar to put the device to sleep</string>
+    <string name="double_tap_sleep_navbar">Двойное нажатие на панели навигации для сна</string>
+    <string name="double_tap_sleep_navbar_summary">Дважды нажмите в любом месте на панели навигации, чтобы перевести устройство в спящий режим</string>
     <!-- Double Tap Lockscreen to Sleep -->
-    <string name="double_tap_to_sleep_lockscreen_title">Double tap to sleep on lockscreen</string>
-    <string name="double_tap_to_sleep_lockscreen_summary">Double tap on the top third or bottom shortcut area of the lock screen to put the device to sleep</string>
+    <string name="double_tap_to_sleep_lockscreen_title">Двойное нажатие на экране блокировки для сна</string>
+    <string name="double_tap_to_sleep_lockscreen_summary">Дважды нажмите в любом месте на экране блокировки, чтобы перевести устройство в спящий режим</string>
     <!-- Double tap-to-sleep -->
-    <string name="double_tap_to_sleep_title">Double tap to sleep on status bar</string>
-    <string name="double_tap_to_sleep_summary">Double tap on status bar to put the device to sleep</string>
+    <string name="double_tap_to_sleep_title">Двойное нажатие на строке состояния для сна</string>
+    <string name="double_tap_to_sleep_summary">Дважды нажмите в любом месте на строке состояния, чтобы перевести устройство в спящий режим</string>
     <!-- Brightness control -->
-    <string name="status_bar_toggle_brightness">Brightness control</string>
-    <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across the status bar</string>
+    <string name="status_bar_toggle_brightness">Управление яркостью</string>
+    <string name="status_bar_toggle_brightness_summary">Регулировать яркость экрана движением пальца по строке состояния</string>
 
     <!-- Lockscreen battery info indicator  -->
-    <string name="lockscreen_battery_info_title">Lockscreen charging info</string>
-    <string name="lockscreen_battery_info_summary">Display negociated charger max current and voltage and battery temperature on lockscreen while charging</string>
+    <string name="lockscreen_battery_info_title">Информация о батарее на экране блокировки</string>
+    <string name="lockscreen_battery_info_summary">Показывать примерное максимальное текущее напряжение и температуру аккумулятора на экране блокировки во время зарядки</string>
 
     <!-- Media art -->
-    <string name="media_art_title">Media cover art</string>
-    <string name="media_art_summary">Enable media cover art on the lockscreen</string>
+    <string name="media_art_title">Обложка альбома</string>
+    <string name="media_art_summary">Показывать обложку альбома на экране блокировки</string>
 
    <!-- Buttons title -->
-    <string name="volume_category">Volume Rocker</string>
-    <string name="power_category">Power Button</string>
+    <string name="volume_category">Кнопки громкости</string>
+    <string name="power_category">Кнопка питания</string>
 
     <!-- Volume button orientation based on current rotation -->
-    <string name="swap_volume_buttons_title">Swap volume rocker orientation</string>
-    <string name="swap_volume_buttons_summary">Adjust the rocker orientation based on current rotation</string>
+    <string name="swap_volume_buttons_title">Автоповорот кнопок</string>
+    <string name="swap_volume_buttons_summary">Менять назначение кнопок регулировки громкости согласно ориентации экрана</string>
 
     <!-- Volume key controls media stream -->
-    <string name="volume_keys_control_media_stream_title">Volume keys control media volume</string>
-    <string name="volume_keys_control_media_stream_summary">Force volume keys to control media stream</string>
+    <string name="volume_keys_control_media_stream_title">Управление громкостью с помощью кнопок</string>
+    <string name="volume_keys_control_media_stream_summary">Управление громкостью воспроизведения</string>
 
     <!-- Volume rocker music control -->
-    <string name="volume_rocker_music_controls_title">Playback control</string>
-    <string name="volume_rocker_music_controls_summary">When the screen is off, long-pressing the volume keys will seek music tracks</string>
+    <string name="volume_rocker_music_controls_title">Переключение композиций</string>
+    <string name="volume_rocker_music_controls_summary">Когда экран выключен, долгое нажатие на кнопки громкости переключает композиции</string>
 
     <!-- Language options - Volume rocker cursor control -->
-    <string name="cursor_section_header">Cursor</string>
-    <string name="volume_key_cursor_control_title">Volume key cursor control</string>
-    <string name="volume_key_cursor_control_off">Disabled</string>
-    <string name="volume_key_cursor_control_on">Volume up/down moves cursor left/right</string>
-    <string name="volume_key_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
+    <string name="cursor_section_header">Курсор</string>
+    <string name="volume_key_cursor_control_title">Кнопки громкости управляют курсором</string>
+    <string name="volume_key_cursor_control_off">Откл.</string>
+    <string name="volume_key_cursor_control_on">Громкость вверх/вниз двигает курсор влево/вправо</string>
+    <string name="volume_key_cursor_control_on_reverse">Громкость вверх/вниз двигает курсор вправо/влево</string>
 
     <!-- Volume rocker wake -->
-    <string name="volume_rocker_wake_title">Volume rocker wake</string>
-    <string name="volume_rocker_wake_summary">Pressing the volume keys will wake your device</string>
+    <string name="volume_rocker_wake_title">Пробуждение кнопками громкости</string>
+    <string name="volume_rocker_wake_summary">Нажатие кнопок громкости пробуждает устройство</string>
 
     <!-- The volume key answer -->
-    <string name="volume_answer_call_title">Volume keys answer</string>
-    <string name="volume_answer_call_summary">Answer the call when volume keys pressed</string>
+    <string name="volume_answer_call_title">Отвечать на звонок кнопками громкости</string>
+    <string name="volume_answer_call_summary">Отвечать на звонок по нажатию кнопок громкости</string>
 
     <!-- QS rows and columns -->
-    <string name="qs_layout_category">QS tiles layout</string>
-    <string name="qs_rows_columns_title">QS rows and columns</string>
-    <string name="qs_rows_portrait_title">Tiles rows on portrait</string>
-    <string name="qs_rows_landscape_title">Tiles rows on landscape</string>
-    <string name="qs_columns_portrait_title">Tiles columns on portrait</string>
-    <string name="qs_columns_landscape_title">Tiles columns on landscape</string>
+    <string name="qs_layout_category">Плитки быстрых настроек</string>
+    <string name="qs_rows_columns_title">Количество строк и колонок для плиток быстрых настроек</string>
+    <string name="qs_rows_portrait_title">Строки (портрет)</string>
+    <string name="qs_rows_landscape_title">Строки (ландшафт)</string>
+    <string name="qs_columns_portrait_title">Колонки (портрет)</string>
+    <string name="qs_columns_landscape_title">Колонки (ландшафт)</string>
 
     <!-- Launch music player when headset is connected -->
-    <string name="headset_connect_player_title">Launch music app on headset connection</string>
-    <string name="headset_connect_player_disabled">Disabled</string>
-    <string name="headset_connect_player_wired">When wired headset is plugged in</string>
-    <string name="headset_connect_player_bt_no_carkit">When BT headset (no carkit) is plugged in</string>
-    <string name="headset_connect_player_bt">When BT headset is plugged in</string>
-    <string name="headset_connect_player_both_no_carkit">When wired or BT headset (no carkit) is plugged in</string>
-    <string name="headset_connect_player_both">When wired or BT headset is plugged in</string>
+    <string name="headset_connect_player_title">Запускать приложение музыкального плеера при подключении гарнитуры</string>
+    <string name="headset_connect_player_disabled">Откл.</string>
+    <string name="headset_connect_player_wired">Когда подключена проводная гарнитура</string>
+    <string name="headset_connect_player_bt_no_carkit">Когда подключена беспроводная гарнитура (без carkit)</string>
+    <string name="headset_connect_player_bt">Когда подключена беспроводная гарнитура</string>
+    <string name="headset_connect_player_both_no_carkit">Когда подключена беспроводная либо проводная гарнитура (без carkit)</string>
+    <string name="headset_connect_player_both">Когда подключена проводная, либо беспроводная гарнитура</string>
 
     <!-- Headset ringtone audio focus -->
-    <string name="ringtone_focus_mode_title">Where to play ringtones from</string>
-    <string name="ringtone_focus_mode_dynamic">From headset if connected and playing music</string>
-    <string name="ringtone_focus_mode_stock">"From speakerphone (aosp default)"</string>
+    <string name="ringtone_focus_mode_title">Играть мелодию вызова через</string>
+    <string name="ringtone_focus_mode_dynamic">Наушники, если они подключены и включена музыка</string>
+    <string name="ringtone_focus_mode_stock">Динамик и наушники (по умолчанию в AOSP)</string>
 
     <!-- Heads up -->
-    <string name="headsup_category">HeadsUp Settings</string>
-    <string name="heads_up_notifications">Heads up</string>
-    <string name="summary_heads_up_enabled">Pop-up notifications are enabled</string>
-    <string name="summary_heads_up_disabled">Pop-up notifications are disabled</string>
-    <string name="add_heads_up_package">Add app</string>
-    <string name="add_heads_up_stoplist_summary">Disable heads up notifications in these applications</string>
-    <string name="add_heads_up_blacklist_summary">Disable heads up from these applications</string>
-    <string name="heads_up_stoplist_title">Stoplist</string>
-    <string name="heads_up_blacklist_title">Blacklist</string>
-    <string name="profile_choose_app">Choose app</string>
-    <string name="dialog_delete_title">Delete</string>
-    <string name="dialog_delete_message">Remove selected item?</string>
+    <string name="headsup_category">Настройки всплывающих уведомлений</string>
+    <string name="heads_up_notifications">Всплывающие уведомления</string>
+    <string name="summary_heads_up_enabled">Всплывающие уведомления вкл.</string>
+    <string name="summary_heads_up_disabled">Всплывающие уведомления выкл.</string>
+    <string name="add_heads_up_package">Добавить приложение</string>
+    <string name="add_heads_up_stoplist_summary">Не показывать всплывающие уведомления когда активно приложение</string>
+    <string name="add_heads_up_blacklist_summary">Блокировать всплывабщие уведомления от следующих приложений</string>
+    <string name="heads_up_stoplist_title">Список активных приложений</string>
+    <string name="heads_up_blacklist_title">Список блокируемых приложений</string>
+    <string name="profile_choose_app">Выбери приложение</string>
+    <string name="dialog_delete_title">Удалить</string>
+    <string name="dialog_delete_message">Удалить выбранное приложение из списка?</string>
 
     <!-- Heads up timeout -->
-    <string name="heads_up_time_out_title">Time out</string>
-    <string name="heads_up_time_out_summary">Peeking notifications will show for <xliff:g id="number">%d</xliff:g> seconds</string>
-    <string name="heads_up_time_out_2sec">2 seconds</string>
-    <string name="heads_up_time_out_4sec">4 seconds</string>
-    <string name="heads_up_time_out_5sec">5 seconds</string>
-    <string name="heads_up_time_out_6sec">6 seconds</string>
-    <string name="heads_up_time_out_8sec">8 seconds</string>
-    <string name="heads_up_time_out_10sec">10 seconds</string>
+    <string name="heads_up_time_out_title">Длительность</string>
+    <string name="heads_up_time_out_summary">Уведомление будет показываться  <xliff:g id="number">%d</xliff:g> секунды</string>
+    <string name="heads_up_time_out_2sec">2 секунды</string>
+    <string name="heads_up_time_out_4sec">4 секунды</string>
+    <string name="heads_up_time_out_5sec">5 секунды</string>
+    <string name="heads_up_time_out_6sec">6 секунды</string>
+    <string name="heads_up_time_out_8sec">8 секунды</string>
+    <string name="heads_up_time_out_10sec">10 секунды</string>
 
     <!-- Heads up snooze -->
-    <string name="heads_up_snooze_title">Snooze timer</string>
-    <string name="heads_up_snooze_summary_one_minute">Swiping up on peeking notifications will snooze heads up from that application for 1 minute</string>
-    <string name="heads_up_snooze_summary">Swiping up on peeking notifications will snooze heads up from that application for <xliff:g id="number">%d</xliff:g> minutes</string>
-    <string name="heads_up_snooze_disabled_summary">Snooze timer is disabled</string>
-    <string name="heads_up_snooze_1min">1 minute</string>
-    <string name="heads_up_snooze_5min">5 minutes</string>
-    <string name="heads_up_snooze_10min">10 minutes</string>
-    <string name="heads_up_snooze_15min">15 minutes</string>
-    <string name="heads_up_snooze_20min">20 minutes</string>
+    <string name="heads_up_snooze_title">Таймер переноса</string>
+    <string name="heads_up_snooze_summary_one_minute">Свайп вверх по всплывающему уведомлению от этого приложения скроет его на одну минуту</string>
+    <string name="heads_up_snooze_summary">Свайп вверх по всплывающему уведомлению от этого приложения скроет его на  <xliff:g id="number">%d</xliff:g> минут</string>
+    <string name="heads_up_snooze_disabled_summary">Таймер режима \"Не беспокоить\" отключен</string>
+    <string name="heads_up_snooze_1min">1 мин.</string>
+    <string name="heads_up_snooze_5min">5 минут</string>
+    <string name="heads_up_snooze_10min">10 минут</string>
+    <string name="heads_up_snooze_15min">15 минут</string>
+    <string name="heads_up_snooze_20min">20 минут</string>
 
     <!-- Incall vibrate options -->
-    <string name="incall_vibration_category">In-call vibration options</string>
-    <string name="incall_vibrate_connect_title">Vibrate on connect</string>
-    <string name="incall_vibrate_call_wait_title">Vibrate on call waiting</string>
-    <string name="incall_vibrate_disconnect_title">Vibrate on disconnect</string>
+    <string name="incall_vibration_category">Вибрация при звонке</string>
+    <string name="incall_vibrate_connect_title">Вибрация при ответе</string>
+    <string name="incall_vibrate_call_wait_title">Выбрация при ожидании</string>
+    <string name="incall_vibrate_disconnect_title">Вибрация при завершении звонка</string>
 
     <!-- Disabling FC notifications -->
-    <string name="disable_fc_notifications_title">Diable FC Notifications</string>
-    <string name="disable_fc_notifications_summary">This will hide all force close notificaitons</string>
+    <string name="disable_fc_notifications_title">Отключить уведомления о ошбиках(FC)</string>
+    <string name="disable_fc_notifications_summary">Это отключит все уведомления о системных ошибках при падении приложений</string>
 
     <!-- Statusbar ticker -->
-    <string name="ticker_screen_title">Ticker</string>
-    <string name="ticker_mode_title">Statusbar notification ticker</string>
-    <string name="ticker_disabled">Disabled</string>
-    <string name="ticker_enabled">Notification ticker</string>
-    <string name="ticker_media_enabled">Notification and music ticker</string>
+    <string name="ticker_screen_title">Текст уведомлений в стоке состояния</string>
+    <string name="ticker_mode_title">Тексть уведомлений в строке состояния (Ticker)</string>
+    <string name="ticker_disabled">Откл.</string>
+    <string name="ticker_enabled">Только текст уведомлений</string>
+    <string name="ticker_media_enabled">Текст уведомлений и названия песен</string>
 
-    <string name="recents_icon_pack_title">Icon Pack</string>
-    <string name="recents_icon_pack_summary">Apply a custom icon pack for Recents panel</string>
-    <string name="no_iconpacks_summary">No icon packs installed</string>
-    <string name="dialog_pick_iconpack_title">Pick icon pack</string>
-    <string name="default_iconpack_title">Default icons</string>
+    <string name="recents_icon_pack_title">Набор иконок</string>
+    <string name="recents_icon_pack_summary">Применить пользовательский набор иконок для приложений в панели</string>
+    <string name="no_iconpacks_summary">Ни одного набора иконок не установленоd</string>
+    <string name="dialog_pick_iconpack_title">Выбери набор иконок</string>
+    <string name="default_iconpack_title">Иконки по умолчанию</string>
 
     <!-- fingerprint authentication vibration -->
     <string name="fprint_sucess_vib_title">Вибрация при авторизации</string>
