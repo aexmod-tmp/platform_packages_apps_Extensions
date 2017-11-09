@@ -34,6 +34,12 @@
             android:title="@string/buttons_title" />
 
          <Preference
+            android:key="recents_ui"
+            android:fragment="org.aospextended.extensions.RecentsUI"
+            android:icon="@drawable/ic_recents_ui"
+            android:title="@string/recents_ui_title" />
+
+         <Preference
             android:key="app_ops"
             android:fragment="com.android.settings.applications.AppOpsSummary"
             android:icon="@drawable/ic_settings_appops"

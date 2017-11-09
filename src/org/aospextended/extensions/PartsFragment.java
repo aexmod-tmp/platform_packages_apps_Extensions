@@ -58,10 +58,8 @@ import java.util.List;
 import org.aospextended.extensions.tabs.System;
 import org.aospextended.extensions.PagerSlidingTabStrip;
 import org.aospextended.extensions.tabs.StatusBar;
-import org.aospextended.extensions.tabs.Recents;
 import org.aospextended.extensions.tabs.Lockscreen;
-import org.aospextended.extensions.tabs.NotificationsPanel;
-import org.aospextended.extensions.tabs.Navigation;
+import org.aospextended.extensions.tabs.Panels;
 
 public class PartsFragment extends SettingsPreferenceFragment {
 
@@ -173,15 +171,12 @@ public class PartsFragment extends SettingsPreferenceFragment {
     class StatusBarAdapter extends FragmentPagerAdapter {
         String titles[] = getTitles();
         private Fragment frags[] = new Fragment[titles.length];
-
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
-            frags[0] = new StatusBar();
-            frags[1] = new NotificationsPanel();
-            frags[2] = new Navigation();
-            frags[3] = new Recents();
-	    frags[4] = new Lockscreen();
-            frags[5] = new System();
+            frags[0] = new System();
+            frags[1] = new StatusBar();
+            frags[2] = new Panels();
+            frags[3] = new Lockscreen();
         }
 
         @Override
@@ -203,12 +198,10 @@ public class PartsFragment extends SettingsPreferenceFragment {
     private String[] getTitles() {
         String titleString[];
         titleString = new String[]{
+                    getString(R.string.system_category),
                     getString(R.string.status_bar_category),
-                    getString(R.string.notifications_panel_category),
-                    getString(R.string.navigation_category),
-                    getString(R.string.recents_category),
-                    getString(R.string.lockscreen_category),
-                    getString(R.string.system_category)};
+                    getString(R.string.panels_category),
+                    getString(R.string.lockscreen_category)};
         return titleString;
     }
 

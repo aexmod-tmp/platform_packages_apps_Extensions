@@ -48,7 +48,7 @@
     <string name="notifications_panel_category">Панель уведомлений</string>
     <string name="system_category">Система</string>
     <string name="lockscreen_category">Экран блокировки</string>
-    <string name="navigation_category">Навигация</string>
+    <string name="panels_category">Панели</string>
     <string name="build_tweaks_summary_title">Расширенные настройки</string>
 
     <!-- Frags -->
@@ -77,7 +77,7 @@
     <string name="navigationbar_settings_title">Панель навигации</string>
 
     <!-- Quick Settings -->
-    <string name="quick_settings_title">Быстрые настройки</string>
+    <string name="quick_settings_title">Панель быстрого доступа</string>
 
     <!-- Buttons -->
     <string name="buttons_title">Кнопки</string>
