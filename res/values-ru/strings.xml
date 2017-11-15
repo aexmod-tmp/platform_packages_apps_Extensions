@@ -167,7 +167,7 @@
 
     <!-- Quick pull down-->
     <string name="quick_pulldown_title">Быстрый досбуп</string>
-    <string name="quick_pulldown_summary">%1$ край строки состояния при опускании вниз открывает панель быстрых настроек</string>
+    <string name="quick_pulldown_summary">%1$s край строки состояния при опускании вниз открывает панель быстрых настроек</string>
     <string name="quick_pulldown_summary_always">Всегда открывать панель быстрых настроек при опускании вниз строки состояния</string>
     <string name="quick_pulldown_off">Выкл.</string>
     <string name="quick_pulldown_left">Левий</string>
@@ -336,5 +336,24 @@
     <string name="enable_mtp_dirtyhack_title">MTP вместо Зарядки</string>
     <string name="enable_mtp_dirtyhack_summary">Включить MTP вместо Зарядки при подключении к ПК</string>
 
+    <!-- Torch Power button gestures -->
+    <string name="torch_power_button_gesture_title">Фонарик по кнопке питания</string>
+    <string name="torch_power_button_gesture_none">Выключено</string>
+    <string name="torch_power_button_gesture_dt">Двойное нажатие при выключенном экране(добавляет задержку одного нажатия)</string>
+    <string name="torch_power_button_gesture_lp">Удержание при выключенном экране</string>
+
+    <!-- Hardware keys -->
+    <string name="hardware_keys_category">Аппаратные кнопки</string>
+    <!-- Buttons backlight timeout -->
+    <string name="backlight_timeout_title">Таймаут подсветки кнопок</string>
+    <string name="backlight_timeout_on">Включена постоянно</string>
+    <string name="backlight_timeout_3s">3 сек</string>
+    <string name="backlight_timeout_default">5 сек (по умолчанию)</string>
+    <string name="backlight_timeout_10s">10 сек</string>
+    <string name="backlight_timeout_15s">15 сек</string>
+    <string name="backlight_timeout_20s">20 сек</string>
+    <string name="backlight_timeout_30s">30 сек</string>
+    <!-- Enable keys backlight-->
+    <string name="button_brightness_title">Подсветка</string>
 </resources>
 

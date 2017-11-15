@@ -41,6 +41,8 @@ import java.util.Locale;
 import android.text.TextUtils;
 import android.view.View;
 
+
+import org.aospextended.extensions.preference.CustomSeekBarPreference;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
@@ -49,6 +51,16 @@ import com.android.settings.Utils;
 public class Buttons extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     private static final String VOLUME_KEY_CURSOR_CONTROL = "volume_key_cursor_control";
+
+    //Keys
+    private static final String KEY_BUTTON_BRIGHTNESS = "button_brightness";
+    private static final String KEY_BACKLIGHT_TIMEOUT = "backlight_timeout";
+
+    // category keys
+    private static final String CATEGORY_HWKEY = "hardware_keys";
+
+    private ListPreference mBacklightTimeout;
+    private CustomSeekBarPreference mButtonBrightness;
 
     private ListPreference mVolumeKeyCursorControl;
 
@@ -60,6 +72,27 @@ public class Buttons extends SettingsPreferenceFragment implements OnPreferenceC
 
         final ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen prefSet = getPreferenceScreen();
+
+
+	mBacklightTimeout =
+                (ListPreference) findPreference(KEY_BACKLIGHT_TIMEOUT);
+        mButtonBrightness =
+                (CustomSeekBarPreference) findPreference(KEY_BUTTON_BRIGHTNESS);
+
+        if (mBacklightTimeout != null) {
+            mBacklightTimeout.setOnPreferenceChangeListener(this);
+            int BacklightTimeout = Settings.System.getInt(resolver,
+                    Settings.System.BUTTON_BACKLIGHT_TIMEOUT, 5000);
+            mBacklightTimeout.setValue(Integer.toString(BacklightTimeout));
+            mBacklightTimeout.setSummary(mBacklightTimeout.getEntry());
+        }
+
+        if (mButtonBrightness != null) {
+            int ButtonBrightness = Settings.System.getInt(resolver,
+                    Settings.System.BUTTON_BRIGHTNESS, 255);
+            mButtonBrightness.setValue(ButtonBrightness / 1);
+            mButtonBrightness.setOnPreferenceChangeListener(this);
+        }
 
         // volume key cursor control
         mVolumeKeyCursorControl = (ListPreference) findPreference(VOLUME_KEY_CURSOR_CONTROL);
@@ -94,8 +127,22 @@ public class Buttons extends SettingsPreferenceFragment implements OnPreferenceC
                     .findIndexOfValue(volumeKeyCursorControl);
             mVolumeKeyCursorControl
                     .setSummary(mVolumeKeyCursorControl.getEntries()[volumeKeyCursorControlIndex]);
+        } else if (preference == mBacklightTimeout) {
+            String BacklightTimeout = (String) value;
+            int BacklightTimeoutValue = Integer.parseInt(BacklightTimeout);
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.BUTTON_BACKLIGHT_TIMEOUT, BacklightTimeoutValue);
+            int BacklightTimeoutIndex = mBacklightTimeout
+                    .findIndexOfValue(BacklightTimeout);
+            mBacklightTimeout
+                    .setSummary(mBacklightTimeout.getEntries()[BacklightTimeoutIndex]);
             return true;
-        }
+        } else if (preference == mButtonBrightness) {
+            int newValue = (Integer) value;
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.BUTTON_BRIGHTNESS, newValue * 1);
+            return true;
+	}
         return false;
     }
 }
