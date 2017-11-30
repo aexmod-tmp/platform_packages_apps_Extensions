@@ -721,5 +721,49 @@
     <string name="battery_percent_outside">Рядом с иконкой</string>
     <string name="battery_percent_inside">Внутри иконки</string>
 
+    <!-- SmartBar -->
+    <string name="smartbar_category">SmartBar</string>
+    <string name="smartbar_settings_title">Настройки SmartBar</string>
+    <string name="smartbar_settings_summary">Полностью настраиваемая панель навигации</string>
+    <string name="smartbar_editor_title">Режим редактирования</string>
+    <string name="smartbar_editor_summary">Открыть режим редактирования</string>
+    <string name="smartbar_help_policy_notice_summary">В режиме редактирования: нажмите и переместите кнопку, удерживайте кнопку для открытия меню параметров. Кнопки могут перемещаться при открытом меню настроек.\n\nДействие двойного нажатия приводит к задержке одиночного нажатия.</string> 
+    <string name="smartbar_context_menu_position_title">Позиция контекстных кнопок</string>
+    <string name="smartbar_context_menu_position_summary">Задать положение контекстных кнопок, таких как меню и выбор способа ввода</string>
+    <string name="smartbar_right">Справа</string>
+    <string name="smartbar_left">Слева</string>
+    <string name="smartbar_button_animation_title">Анимация нажатия кнопок</string>
+    <string name="smartbar_button_animation_summary">Задать стиль анимации основных кнопок при нажатии</string>
+    <string name="smartbar_button_animation_ripple">Пульсация</string>
+    <string name="smartbar_button_animation_pixel">Pixel (все кнопки)</string>
+    <string name="smartbar_button_animation_pixel_home">Pixel (только кнопка Домой)</string>
+    <string name="smartbar_button_animation_pixel_home_ripple">Pixel (только кнопка Домой) и пульсация</string>
+    <string name="smartbar_factory_reset_title">Сброс к настройкам по умолчанию</string>
+    <string name="smartbar_factory_reset_confirm">Вы уверены, что вы хотите сбросить SmartBar к настройкам по умолчанию?</string>
+    <string name="smartbar_ime_action_title">Параметры метода ввода</string>
+    <string name="smartbar_ime_action_summary">Установить какие кнопки будут показаны при отображании клавиатуры</string>
+    <string name="smartbar_ime_action_none">Ничего</string>
+    <string name="smartbar_ime_action_arrows">Стрелки ввода</string>
+    <string name="smartbar_ime_action_switcher">Переключатель клавиатуры</string>
+    <string name="smartbar_ime_action_dynamic">Стрелки ввода/медиа</string>
+    <string name="smartbar_backup_current_config_title">Сохранить профиль</string>
+    <string name="smartbar_restore_config_title">Восстановить профиль</string>
+    <string name="smartbar_config_name_edit_dialog_title">Имя профиля Smartbar</string>
+    <string name="smartbar_config_name_edit_dialog_message">Введите название или оставьте поле пустым</string>
+    <string name="smartbar_config_dialog_title">Профили Smartbar</string>
+    <string name="smartbar_config_backup_success_toast">Профиль Smartbar успешно сохранен</string>
+    <string name="smartbar_config_restore_success_toast">Профиль Smartbar успешно восстановлен</string>
+    <string name="smartbar_config_backup_error_toast">Ошибка при сохранении профиля Smartbar</string>
+    <string name="smartbar_config_restore_error_toast">Ошибка при восстановлении профиля Smartbar</string>
+    <string name="navbar_buttons_alpha_title">Прозрачность кнопок</string>
+    <string name="smartbar_longpress_delay_title">Настройка удержания</string>
+    <string name="smartbar_longpress_delay_summary">Время, необходимое системе для определения удержания кнопки</string>
+    <string name="smartbar_longpress_delay_default">По умолчанию (быстро)</string>
+    <string name="smartbar_longpress_delay_normal">Нормально</string>
+    <string name="smartbar_longpress_delay_long">Длительно</string>
+    <string name="smartbar_custom_icon_size_title">Масштабирование значков</string>
+    <string name="smartbar_double_tap_sleep_title">Спящий режим</string>
+    <string name="smartbar_double_tap_sleep_summary">Дважды коснитесь панели навигации для перевода устройства в спящий режим</string>
+
 </resources>
 
