@@ -69,6 +69,8 @@ public class Buttons extends ActionFragment implements OnPreferenceChangeListene
     private static final String CATEGORY_BACK = "back_key";
     private static final String CATEGORY_APPSWITCH = "app_switch_key";
 
+    private static final String TORCH_POWER_BUTTON_GESTURE = "torch_power_button_gesture";
+
     public static final int KEY_MASK_HOME = 0x01;
     public static final int KEY_MASK_BACK = 0x02;
     public static final int KEY_MASK_MENU = 0x04;
@@ -81,6 +83,7 @@ public class Buttons extends ActionFragment implements OnPreferenceChangeListene
     private CustomSeekBarPreference mButtonBrightness;
 
     private ListPreference mVolumeKeyCursorControl;
+    private ListPreference mTorchPowerButton;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -167,6 +170,20 @@ public class Buttons extends ActionFragment implements OnPreferenceChangeListene
            mVolumeKeyCursorControl.setSummary(mVolumeKeyCursorControl.getEntry());
         }
 
+            mTorchPowerButton = (ListPreference) findPreference(TORCH_POWER_BUTTON_GESTURE);
+            int mTorchPowerButtonValue = Settings.Secure.getInt(resolver,
+                    Settings.Secure.TORCH_POWER_BUTTON_GESTURE, 0);
+            mTorchPowerButton.setValue(Integer.toString(mTorchPowerButtonValue));
+            mTorchPowerButton.setSummary(mTorchPowerButton.getEntry());
+            mTorchPowerButton.setOnPreferenceChangeListener(this);
+    }
+
+    private ListPreference initActionList(String key, int value) {
+        ListPreference list = (ListPreference) getPreferenceScreen().findPreference(key);
+        list.setValue(Integer.toString(value));
+        list.setSummary(list.getEntry());
+        list.setOnPreferenceChangeListener(this);
+        return list;
     }
 
     @Override
@@ -210,6 +227,18 @@ public class Buttons extends ActionFragment implements OnPreferenceChangeListene
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.BUTTON_BRIGHTNESS, newValue * 1);
             return true;
+	} else  if (preference == mTorchPowerButton) {
+            int mTorchPowerButtonValue = Integer.valueOf((String) value);
+            int index = mTorchPowerButton.findIndexOfValue((String) value);
+            mTorchPowerButton.setSummary(
+                    mTorchPowerButton.getEntries()[index]);
+            Settings.Secure.putInt(getActivity().getContentResolver(), Settings.Secure.TORCH_POWER_BUTTON_GESTURE,
+                    mTorchPowerButtonValue);
+            if (mTorchPowerButtonValue == 1) {
+                //if doubletap for torch is enabled, switch off double tap for camera
+                Settings.Secure.putInt(getActivity().getContentResolver(), Settings.Secure.CAMERA_DOUBLE_TAP_POWER_GESTURE_DISABLED,
+                        1);
+           }    
 	}
         return false;
     }
