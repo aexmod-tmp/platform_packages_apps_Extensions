@@ -16,6 +16,17 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/buttons_title">
 
+    <PreferenceCategory
+	android:key="general_keys"
+        android:title="@string/hardware_keys_general_title">
+
+    <org.aospextended.extensions.preference.SystemSettingSwitchPreference
+            android:key="haptic_on_action_key"
+            android:title="@string/haptic_on_action_title"
+            android:summary="@string/haptic_on_action_summary"
+            android:defaultValue="false" />
+    </PreferenceCategory>
+
    <PreferenceCategory
         android:key="power_button"
         android:title="@string/power_category">
