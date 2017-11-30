@@ -45,10 +45,12 @@
     </PreferenceCategory>
 
 <PreferenceCategory
-        android:key="hardware_keys"
+        android:key="brightness_keys"
         android:title="@string/button_brightness_title" >
 
-<ListPreference
+
+
+    <ListPreference
         android:dialogTitle="@string/backlight_timeout_title"
         android:entries="@array/backlight_timeout_entries"
         android:entryValues="@array/backlight_timeout_values"
@@ -64,7 +66,14 @@
             settings:units=""
             android:persistent="false" />
 
+    <org.aospextended.extensions.preference.SystemSettingSwitchPreference
+        android:key="button_backlight_on_touch_only"
+        android:title="@string/button_backlight_on_touch_only_title"
+        android:summary="@string/button_backlight_on_touch_only_summary"
+        android:defaultValue="false" />
+
     </PreferenceCategory>
+
 
    <PreferenceCategory
         android:key="volume_category"
@@ -109,10 +118,15 @@
 
     </PreferenceCategory>
 
-<!--    <PreferenceCategory
+    <PreferenceCategory
         android:key="hardware_keys"
         android:title="@string/hardware_keys_category" >
-    </PreferenceCategory> -->
+
+    <SwitchPreference
+        android:key="hardware_keys_disable"
+        android:title="@string/hardware_keys_disable_title" />
+
+    </PreferenceCategory>
 
      <PreferenceCategory
         android:key="back_key"

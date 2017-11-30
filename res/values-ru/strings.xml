@@ -381,5 +381,11 @@
     <string name="show_fourg_icon_title">4G иконка</string>
     <string name="show_fourg_icon_summary">Отображать 4G вместо LTE</string>
 
+    <string name="button_backlight_on_touch_only_title">Подсветка при касании</string>
+    <string name="button_backlight_on_touch_only_summary">Включать подсветку сенсорных кнопок только при их касании</string>
+
+    <string name="screenshot_crop_and_share_title">Обрезать скриншот и поделиться</string>
+    <string name="screenshot_crop_and_share_summary">Показать окно редактора после создания скриншота для того, чтобы его можно было обрезать, сохранить или поделиться</string>
+
 </resources>
 
