@@ -368,5 +368,14 @@
     <string name="hardware_keys_double_tap_title">Действие по двойному нажатию</string>
     <string name="hardware_keys_category">Аппаратные кнопки</string>
     <string name="hardware_keys_disable_title">Отключить аппаратные кнопки</string>
+
+    <!-- Roaming indicator icon -->
+    <string name="roaming_indicator_icon_title">Индикатор роуминга</string>
+    <string name="roaming_indicator_icon_summary">Отображать иконку при роуминге</string>
+
+    <!-- 4G icon -->
+    <string name="show_fourg_icon_title">4G иконка</string>
+    <string name="show_fourg_icon_summary">Отображать 4G вместо LTE</string>
+
 </resources>
 
