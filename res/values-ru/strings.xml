@@ -170,7 +170,7 @@
     <string name="quick_pulldown_summary">%1$s край строки состояния при опускании вниз открывает панель быстрых настроек</string>
     <string name="quick_pulldown_summary_always">Всегда открывать панель быстрых настроек при опускании вниз строки состояния</string>
     <string name="quick_pulldown_off">Выкл.</string>
-    <string name="quick_pulldown_left">Левий</string>
+    <string name="quick_pulldown_left">Левый</string>
     <string name="quick_pulldown_right">Правый</string>
     <string name="quick_pulldown_always">Всегда</string>
 
@@ -387,5 +387,8 @@
     <string name="screenshot_crop_and_share_title">Обрезать скриншот и поделиться</string>
     <string name="screenshot_crop_and_share_summary">Показать окно редактора после создания скриншота для того, чтобы его можно было обрезать, сохранить или поделиться</string>
 
+    <!-- Pocket judge -->
+    <string name="pocket_judge_title">Режим в "Кармане"</string>
+    <string name="pocket_judge_summary">Блокировать экран и кнопки от случайного нажатия в кармане</string>
 </resources>
 
