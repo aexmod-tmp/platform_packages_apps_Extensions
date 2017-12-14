@@ -351,7 +351,7 @@
     <string name="recent_panel_expanded_mode_summary">Recent tasks expanded preview mode</string>
     <string name="recent_panel_expanded_mode_auto">Auto (default)</string>
     <string name="recent_panel_expanded_mode_always">All previews</string>
-    <string name="recent_panel_expanded_mode_never">Off (fast engine mode)</string>
+    <string name="recent_panel_expanded_mode_never">Disabled</string>
     <string name="recent_panel_bg_color_title">Panel background color</string>
     <string name="recent_card_bg_color_title">Card background color</string>
     <string name="recent_reset_title">Reset to stock color</string>
@@ -593,3 +593,5 @@
     <string name="pocket_judge_title">Pocket detection</string>
     <string name="pocket_judge_summary">Block screen and button inputs when device is in pocket</string>
 </resources>
+
+
