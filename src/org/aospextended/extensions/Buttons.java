@@ -56,8 +56,6 @@ import org.aospextended.extensions.dui.ActionFragment;
 
 public class Buttons extends ActionFragment implements OnPreferenceChangeListener {
 
-    private static final String VOLUME_KEY_CURSOR_CONTROL = "volume_key_cursor_control";
-
     //Keys
     private static final String KEY_BUTTON_BRIGHTNESS = "button_brightness";
     private static final String KEY_BACKLIGHT_TIMEOUT = "backlight_timeout";
@@ -180,16 +178,6 @@ public class Buttons extends ActionFragment implements OnPreferenceChangeListene
         // load preferences first
         setActionPreferencesEnabled(keysDisabled == 0);
 
-        // volume key cursor control
-        mVolumeKeyCursorControl = (ListPreference) findPreference(VOLUME_KEY_CURSOR_CONTROL);
-        if (mVolumeKeyCursorControl != null) {
-            mVolumeKeyCursorControl.setOnPreferenceChangeListener(this);
-            int volumeRockerCursorControl = Settings.System.getInt(getContentResolver(),
-                    Settings.System.VOLUME_KEY_CURSOR_CONTROL, 0);
-            mVolumeKeyCursorControl.setValue(Integer.toString(volumeRockerCursorControl));
-           mVolumeKeyCursorControl.setSummary(mVolumeKeyCursorControl.getEntry());
-        }
-
             mTorchPowerButton = (ListPreference) findPreference(TORCH_POWER_BUTTON_GESTURE);
             int mTorchPowerButtonValue = Settings.Secure.getInt(resolver,
                     Settings.Secure.TORCH_POWER_BUTTON_GESTURE, 0);
@@ -223,16 +211,7 @@ public class Buttons extends ActionFragment implements OnPreferenceChangeListene
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object value) {
-        if (preference == mVolumeKeyCursorControl) {
-            String volumeKeyCursorControl = (String) value;
-            int volumeKeyCursorControlValue = Integer.parseInt(volumeKeyCursorControl);
-            Settings.System.putInt(getActivity().getContentResolver(),
-                    Settings.System.VOLUME_KEY_CURSOR_CONTROL, volumeKeyCursorControlValue);
-            int volumeKeyCursorControlIndex = mVolumeKeyCursorControl
-                    .findIndexOfValue(volumeKeyCursorControl);
-            mVolumeKeyCursorControl
-                    .setSummary(mVolumeKeyCursorControl.getEntries()[volumeKeyCursorControlIndex]);
-        } else if (preference == mBacklightTimeout) {
+        if (preference == mBacklightTimeout) {
             String BacklightTimeout = (String) value;
             int BacklightTimeoutValue = Integer.parseInt(BacklightTimeout);
             Settings.System.putInt(getActivity().getContentResolver(),
