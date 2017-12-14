@@ -37,7 +37,6 @@
 
     <dimen name="picker_circle_preview_size">26dp</dimen>
 
-    <dimen name="alert_dialog_padding_material">20dp</dimen>
 
     <!-- Navbar height -->
     <integer name="navigation_bar_height_min_percent">65</integer>

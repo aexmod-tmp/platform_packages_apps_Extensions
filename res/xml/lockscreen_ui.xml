@@ -20,12 +20,6 @@
         android:key="lockscreen_ui_general_category"
         android:title="@string/general_category">
 
-    <org.aospextended.extensions.preference.SystemSettingSwitchPreference
-        android:key="pocket_judge"
-        android:title="@string/pocket_judge_title"
-        android:summary="@string/pocket_judge_summary"
-        android:defaultValue="false" />
-
     <Preference
             android:title="@string/lockscreen_tuner_title" >
             <intent android:action="android.intent.action.MAIN"
