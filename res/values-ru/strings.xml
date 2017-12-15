@@ -390,5 +390,14 @@
     <!-- Pocket judge -->
     <string name="pocket_judge_title">Режим в "Кармане"</string>
     <string name="pocket_judge_summary">Блокировать экран и кнопки от случайного нажатия в кармане</string>
+
+    <!-- Wakelock blocker -->
+    <string name="wakelock_blocker_title">Блокировка *wakelocks*</string>
+    <string name="wakelock_blocker_summary">Заблокировать *wakelocks* системы</string>
+    <string name="wakelock_blocker_save">Сохранить</string>
+    <string name="wakelock_list_header">Доступные *wakelocks*</string>
+    <string name="wakelock_blocker_reload">Сбросить</string>
+    <string name="wakelock_blocker_warning_title">Продолжайте с осторожностью</string>
+    <string name="wakelock_blocker_warning">Блокировка *wakelocks* может вызвать нестабильную работу, краши и потерю данных</string>
 </resources>
 
