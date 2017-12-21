@@ -166,7 +166,7 @@
     <string name="recents_show_membar_summary">Показывать шкалу использования ОЗУ</string>
 
     <!-- Quick pull down-->
-    <string name="quick_pulldown_title">Быстрый досбуп</string>
+    <string name="quick_pulldown_title">Быстрый доступ</string>
     <string name="quick_pulldown_summary">%1$s край строки состояния при опускании вниз открывает панель быстрых настроек</string>
     <string name="quick_pulldown_summary_always">Всегда открывать панель быстрых настроек при опускании вниз строки состояния</string>
     <string name="quick_pulldown_off">Выкл.</string>
@@ -399,5 +399,130 @@
     <string name="wakelock_blocker_reload">Сбросить</string>
     <string name="wakelock_blocker_warning_title">Продолжайте с осторожностью</string>
     <string name="wakelock_blocker_warning">Блокировка *wakelocks* может вызвать нестабильную работу, краши и потерю данных</string>
+
+    <!-- Alarm blocker -->
+    <string name="alarm_blocker">Блокировка *alarms*</string>
+    <string name="alarm_blocker_title">Включено</string>
+    <string name="alarm_blocker_summary">Заблокировать *alarms* при выключенном экране</string>
+    <string name="alarm_blocker_save">Сохранить</string>
+    <string name="alarm_list_header">Доступные *alarms*</string>
+    <string name="alarm_blocker_reload">Перезагрузить</string>
+    <string name="alarm_blocker_warning_title">Продолжайте с осторожностью</string>
+    <string name="alarm_blocker_warning">Блокировка *alarms* может вызвать нестабильную работу, краши и потерю данных</string>
+
+    <!-- Whether to display IME switcher notifcation -->
+    <string name="ime_switcher_notify">Значок выбора метода ввода</string>
+    <string name="ime_switcher_notify_summary">Отображать переключатель метода ввода при открытии текстовых полей</string>
+
+    <!-- Wakeup options -->
+    <string name="wakeup_when_plugged_unplugged_title">Пробуждение при зарядке</string>
+    <string name="wakeup_when_plugged_unplugged_summary">Пробуждать устройство при подключении/отключении зарядного устройства.</string>
+
+    <!-- DUI -->
+    <string name="navbar_interface_title">Интерфейс</string>
+    <string name="navbar_size">Размер панели навигации</string>
+    <string name="navbar_mode">Режим навигации</string>
+    <string name="navbar_visibility">Включить панель навигации</string>
+    <string name="navbar_mode_summary">Выбрать вид панели навигации</string>
+    <string name="navigationbar_settings_summary">Настройка стиля панели навигации</string>
+    <string name="navbar_general_title">Дополнительно</string>
+    <string name="navigation_bar_left_title">Режим левши</string>
+    <string name="navigation_bar_left_summary">Отображать панель навигации слева в альбомной ориентации экрана</string>
+    <string name="info_pref_note_title">Примечание</string>
+    <string name="smartbar_interface">Smartbar</string>
+    <string name="icon_pack_picker_dialog_title">Наборы иконок</string>
+    <string name="image_exceeds_max_allowed_size">Изображение не должно превышать размер 512x512</string>
+    <string name="invalid_icon_from_uri">Не удается загрузить изображения от поставщика изображений</string>
+    <string name="picker_activities">Действия</string>
+    <string name="select_custom_app_title">Выбрать пользовательское приложение</string>
+    <string name="select_custom_activity_title">Выбрать пользовательское действие</string>
+    <string name="profile_applist_title">Приложения</string>
+    <string name="default_string">По умолчанию</string>
+    <string name="default_settings">Stock settings</string>
+    <string name="default_settings_summary">Stock AOSP navigation bar</string>
+
+    <!-- Actions dialog and default task values set in ActionPreference xml-->
+    <string name="choose_action_title">Выберите действие</string>
+    <string name="action_entry_default_action">Настройки по умолчанию</string>
+    <string name="action_entry_select_app">Выберите приложение</string>
+    <string name="action_entry_custom_action">Выбрать пользовательское действие</string>
+
+    <!-- Fling -->
+    <string name="fling_settings">Настройки Fling</string>
+    <string name="fling_settings_summary">Уникальная настраиваемая панель навигации с жестами</string>
+    <string name="fling_interface">Fling</string>
+    <string name="fling_enable_title">Включить Fling</string>
+    <string name="fling_back_home_policy">\"Назад\" и \"Домой\" должны быть установлены всегда. Чтобы изменить назначение \"Назад\" или \"Домой\", сначала установите нужное назначение</string>
+    <string name="fling_split_bar_policy">Когда назначено действие только справа или слева, оно выполняется на всей панели</string>
+    <string name="fling_def_summary">Действия не установлены</string>
+    <string name="fling_swipe_actions">Жесты свайпов</string>
+    <string name="fling_tap_actions">Жесты касания</string>
+    <string name="fling_short_swipe_right">Короткий свайп вправо</string>
+    <string name="fling_short_swipe_left">Короткий свайп влево</string>
+    <string name="fling_long_swipe_right">Долгий свайп вправо</string>
+    <string name="fling_long_swipe_left">Долгий свайп влево</string>
+    <string name="fling_right_up_swipe">Свайп вверх справа</string>
+    <string name="fling_left_up_swipe">Свайп вверх слева</string>
+    <string name="fling_single_tap">Короткое нажатие справа</string>
+    <string name="fling_double_tap">Двойное нажатие справа</string>
+    <string name="fling_long_press">Длительное нажатие справа</string>
+    <string name="fling_single_left_tap">Короткое нажатие слева</string>
+    <string name="fling_double_left_tap">Двойное нажатие слева</string>
+    <string name="fling_long_left_press">Длительное нажатие слева</string>
+    <string name="long_swipe_portrait_title">Портреная ориентация</string>
+    <string name="long_swipe_landscape_title">Горизонтальная ориентация</string>
+    <string name="portrait_right_swipe_title">Свайп с правой стороны в портретном режиме</string>
+    <string name="portrait_left_swipe_title">Свайп с левой стороны в портретном режиме</string>
+    <string name="landscape_right_swipe_title">Свайп с правой стороны в ландшафтном режиме</string>
+    <string name="landscape_left_swipe_title">Свайп с левой стороны в ландшафтном режиме</string>
+    <string name="vertical_up_swipe_title">Вертикальный свайп вверх</string>
+    <string name="vertical_down_swipe_title">Вертикальный свайп вниз</string>
+    <string name="up_swipe_title">Свайп вверх</string>
+    <string name="down_swipe_title">Свайп вниз</string>
+    <string name="long_swipe_reset">Выполнить сброс</string>
+    <string name="fling_advanced">Дополнительно</string>
+    <string name="fling_long_swipe_title">Длительность длинного свайпа</string>
+    <string name="fling_long_swipe_summary">Тонкая настройка порога длинного свайпа основана на проценте ширины или высоты интерфейса Fling</string>
+    <string name="fling_appearance">Вид</string>
+    <string name="fling_show_logo_title">Показывать логотип Fling</string>
+    <string name="fling_animate_logo_title">Анимация логотипа</string>
+    <string name="fling_animate_logo_summary">Анимированный логотип при нажатиях</string>
+    <string name="fling_logo_color">Цвета логотипа</string>
+    <string name="fling_logo_custom_logo_pick_title">Пользовательская иконка логотипа</string>
+    <string name="fling_logo_custom_logo_image_pick_title">Пользовательская картинка логотипа</string>
+    <string name="fling_logo_custom_logo_reset_title">Сбросить иконку логотипа</string>
+    <string name="fling_show_ripple_title">Показать пульсации</string>
+    <string name="fling_show_ripple_summary">Эффект пульсаций при нажатиях</string>
+    <string name="fling_ripple_color">Цвет пульсаций</string>
+    <string name="fling_longpress_timeout_label_left">Меньшая задержка</string>
+    <string name="fling_longpress_timeout_label_right">Большая задержка</string>
+    <string name="fling_longpress_title">Задержка длительного нажатия</string>
+    <string name="fling_longpress_summary">Увеличить или уменьшить время, необходимое для длительного нажатия</string>
+    <string name="fling_keyboard_cursors_title">Управление курсором</string>
+    <string name="fling_keyboard_cursors_summary">Двойное нажатие слева и справа перемещают курсор при открытой клавиатуре</string>
+    <string name="fling_logo_opacity_title">Прозрачность логотипа Fling</string>
+
+    <!-- Pulse navigation bar music visualizer -->
+    <string name="pulse_help_policy_notice_title">О Pulse</string>
+    <string name="pulse_help_policy_notice_summary">Pulse - это блестящий и стильный визуализатор звука, который отображается на панели навигации при воспроизведении музыки. Pulse не работает с некоторыми источниками звука при прослушивании через динамик устройства</string>
+    <string name="pulse_settings">Pulse</string>
+    <string name="pulse_settings_summary">Аудио визуализация панели навигации</string>
+    <string name="fling_show_pulse_title">Включить Pulse</string>
+    <string name="fling_show_pulse_summary">Включить визуализацию аудио в панели навигации</string>
+    <string name="pulse_render_mode_title">Режим визуализации</string>
+    <string name="pulse_render_mode_fading_bars">Затухающие блоки</string>
+    <string name="pulse_render_mode_solid_lines">Сплошные линии</string>
+    <string name="fling_pulse_color">Цвет Pulse</string>
+    <string name="eos_fling_lavalamp_title">Включить \"Лава Лампу\"</string>
+    <string name="eos_fling_lavalamp_summary">Включить плавно меняющиеся цвета визуализатора Pulse</string>
+    <string name="pulse_advanced_category">Дополнительно</string>
+    <string name="pulse_legacy_mode_advanced_category">Настройки затухающих блоков</string>
+    <string name="pulse_custom_fudge_factor">Уровень чувствительности</string>
+    <string name="lavamp_solid_speed_title">Скорость \"Лава Лампы\"</string>
+    <string name="pulse_solid_units_count">Количество сплошных линий</string>
+    <string name="pulse_solid_lines_count">Количество сплошных линий</string>
+    <string name="pulse_solid_units_opacity">Прозрачность сплошных линий</string>
+    <string name="pulse_solid_dimen_category">Настройки режима сплошных линий</string>
+    <string name="pulse_custom_buttons_opacity_title">Прозрачность кнопок Smartbar</string>
 </resources>
 

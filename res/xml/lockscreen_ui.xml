@@ -45,6 +45,7 @@
         android:summary="@string/fprint_error_vib_summary"
         android:defaultValue="true" />
 
+
     <org.aospextended.extensions.preference.SystemSettingSwitchPreference
         android:key="double_tap_sleep_lockscreen"
         android:title="@string/double_tap_to_sleep_lockscreen_title"

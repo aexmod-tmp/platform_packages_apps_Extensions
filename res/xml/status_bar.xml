@@ -29,17 +29,14 @@
                 android:targetPackage="com.android.systemui"
                 android:targetClass="com.android.systemui.tuner.StatusbarItemsActivity" />
     </Preference>
-
          <Preference
             android:key="traffic"
             android:fragment="org.aospextended.extensions.Traffic"
             android:icon="@drawable/ic_traffic"
             android:title="@string/traffic_title" />
-
          <Preference
             android:key="misc_extensions"
             android:fragment="org.aospextended.extensions.MiscExtensions"
             android:icon="@drawable/ic_misc_extensions"
             android:title="@string/misc_extensions_title" />
-
 </PreferenceScreen>

@@ -49,14 +49,10 @@ import com.android.settings.Utils;
 
 public class GeneralTweaks extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
-    private static final String HEADSET_CONNECT_PLAYER = "headset_connect_player";
-    private static final String RINGTONE_FOCUS_MODE = "ringtone_focus_mode";
     private static final String INCALL_VIB_OPTIONS = "incall_vib_options";
 
     private PreferenceCategory mLedsCategory;
     private Preference mChargingLeds;
-    private ListPreference mLaunchPlayerHeadsetConnection;
-    private ListPreference mHeadsetRingtoneFocus;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -78,20 +74,6 @@ public class GeneralTweaks extends SettingsPreferenceFragment implements OnPrefe
             prefSet.removePreference(mLedsCategory);
         }
 
-        mLaunchPlayerHeadsetConnection = (ListPreference) findPreference(HEADSET_CONNECT_PLAYER);
-        int mLaunchPlayerHeadsetConnectionValue = Settings.System.getIntForUser(resolver,
-                Settings.System.HEADSET_CONNECT_PLAYER, 4, UserHandle.USER_CURRENT);
-        mLaunchPlayerHeadsetConnection.setValue(Integer.toString(mLaunchPlayerHeadsetConnectionValue));
-        mLaunchPlayerHeadsetConnection.setSummary(mLaunchPlayerHeadsetConnection.getEntry());
-        mLaunchPlayerHeadsetConnection.setOnPreferenceChangeListener(this);
-
-        mHeadsetRingtoneFocus = (ListPreference) findPreference(RINGTONE_FOCUS_MODE);
-        int mHeadsetRingtoneFocusValue = Settings.Global.getInt(resolver,
-                Settings.Global.RINGTONE_FOCUS_MODE, 0);
-        mHeadsetRingtoneFocus.setValue(Integer.toString(mHeadsetRingtoneFocusValue));
-        mHeadsetRingtoneFocus.setSummary(mHeadsetRingtoneFocus.getEntry());
-        mHeadsetRingtoneFocus.setOnPreferenceChangeListener(this);
-
         PreferenceCategory incallVibCategory = (PreferenceCategory) findPreference(INCALL_VIB_OPTIONS);
         if (!Utils.isVoiceCapable(getActivity())) {
             prefSet.removePreference(incallVibCategory);
@@ -110,24 +92,6 @@ public class GeneralTweaks extends SettingsPreferenceFragment implements OnPrefe
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        ContentResolver resolver = getActivity().getContentResolver();
-        if (preference == mLaunchPlayerHeadsetConnection) {
-            int mLaunchPlayerHeadsetConnectionValue = Integer.valueOf((String) newValue);
-            int index = mLaunchPlayerHeadsetConnection.findIndexOfValue((String) newValue);
-            mLaunchPlayerHeadsetConnection.setSummary(
-                    mLaunchPlayerHeadsetConnection.getEntries()[index]);
-            Settings.System.putIntForUser(resolver, Settings.System.HEADSET_CONNECT_PLAYER,
-                    mLaunchPlayerHeadsetConnectionValue, UserHandle.USER_CURRENT);
-            return true;
-        } else if (preference == mHeadsetRingtoneFocus) {
-            int mHeadsetRingtoneFocusValue = Integer.valueOf((String) newValue);
-            int index = mHeadsetRingtoneFocus.findIndexOfValue((String) newValue);
-            mHeadsetRingtoneFocus.setSummary(
-                    mHeadsetRingtoneFocus.getEntries()[index]);
-            Settings.Global.putInt(resolver, Settings.Global.RINGTONE_FOCUS_MODE,
-                    mHeadsetRingtoneFocusValue);
-            return true;
-        }
         return false;
     }
 }

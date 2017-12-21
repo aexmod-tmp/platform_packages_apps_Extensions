@@ -54,7 +54,7 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
 
     private ListPreference mQuickPulldown;
     ListPreference mSmartPulldown;
-    private CustomSeekBarPreference mQsRowsPort;
+     private CustomSeekBarPreference mQsRowsPort;
     private CustomSeekBarPreference mQsRowsLand;
     private CustomSeekBarPreference mQsColumnsPort;
     private CustomSeekBarPreference mQsColumnsLand;
@@ -81,8 +81,8 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
                 Settings.System.QS_SMART_PULLDOWN, 0);
         mSmartPulldown.setValue(String.valueOf(smartPulldown));
         updateSmartPulldownSummary(smartPulldown);
-
-        int value = Settings.System.getIntForUser(resolver,
+	
+	int value = Settings.System.getIntForUser(resolver,
                 Settings.System.QS_ROWS_PORTRAIT, 3, UserHandle.USER_CURRENT);
         mQsRowsPort = (CustomSeekBarPreference) findPreference("qs_rows_portrait");
         mQsRowsPort.setValue(value);
@@ -165,7 +165,7 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
             Settings.System.putInt(resolver, Settings.System.QS_SMART_PULLDOWN, smartPulldown);
             updateSmartPulldownSummary(smartPulldown);
             return true;
-        } else if (preference == mQsRowsPort) {
+	} else if (preference == mQsRowsPort) {
             int val = (Integer) newValue;
             Settings.System.putIntForUser(getContentResolver(),
                     Settings.System.QS_ROWS_PORTRAIT, val, UserHandle.USER_CURRENT);
