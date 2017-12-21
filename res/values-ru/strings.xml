@@ -553,5 +553,8 @@
     <string name="weather_config_title">Настройки сервиса</string>
     <string name="weather_icon_pack_title">Стиль иконок</string>
 
+    <!-- Notification LED lights -->
+    <string name="notification_light_settings">Светодиод уведомлений</string>
+
 </resources>
 
