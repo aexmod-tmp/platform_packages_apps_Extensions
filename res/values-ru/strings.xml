@@ -174,15 +174,6 @@
     <string name="quick_pulldown_right">Правый</string>
     <string name="quick_pulldown_always">Всегда</string>
 
-    <!-- Smart pulldown-->
-    <string name="smart_pulldown_title">Быстрый доступ</string>
-    <string name="smart_pulldown_summary">Открывать быстрые настройки, когда есть %1$s уведомления</string>
-    <string name="smart_pulldown_none_summary">Открывать быстрей настройка, когда нет уведомлений</string>
-    <string name="smart_pulldown_off">Откл.</string>
-    <string name="smart_pulldown_none">нет уведомлений</string>
-    <string name="smart_pulldown_dismissable">no dismissable</string>
-    <string name="smart_pulldown_ongoing">no ongoing</string>
-
     <!-- Navbar tuner -->
     <string name="navbar_tuner_title">Панель навигации</string>
 
@@ -556,5 +547,17 @@
     <!-- Notification LED lights -->
     <string name="notification_light_settings">Светодиод уведомлений</string>
 
+     <!-- Disable QS on secure Lockscreen -->
+    <string name="lockscreen_qs_disabled_title">На экране блокировки</string>
+    <string name="lockscreen_qs_disabled_summary">Выключить панель быстрых настроек на защищенном экране блокировки</string>
+
+     <!-- Smart pulldown-->
+    <string name="smart_pulldown_title">\"Умная\" панель уведомлений</string>
+    <string name="smart_pulldown_summary">Открыть быстрые настройки %1$s уведомлений</string>
+    <string name="smart_pulldown_none_summary">Открыть быстрые настройки без уведомлений</string>
+    <string name="smart_pulldown_off">выключено</string>
+    <string name="smart_pulldown_none">без уведомлений</string>
+    <string name="smart_pulldown_dismissable">без удаляемых</string>
+    <string name="smart_pulldown_ongoing">без постоянных</string>
 </resources>
 
