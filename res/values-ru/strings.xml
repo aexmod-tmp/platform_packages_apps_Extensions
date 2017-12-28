@@ -141,7 +141,7 @@
     <string name="brightness_icon_title">Значок яркости</string>
     <string name="brightness_icon_summary">Показать значок включения авто-яркости слева от слайдера</string>
 
-     <string name="toast_icon_title">Значок всплыюващих уведомлений</string>
+     <string name="toast_icon_title">Значок всплывающих уведомлений</string>
      <string name="toast_icon_summary">Показывать значек приложения соответствующего всплывающему уведомлению</string>
 
     <!-- Power Menu -->
@@ -306,7 +306,7 @@
 
     <!-- Statusbar ticker -->
     <string name="ticker_screen_title">Текст уведомлений в стоке состояния</string>
-    <string name="ticker_mode_title">Тексть уведомлений в строке состояния (Ticker)</string>
+    <string name="ticker_mode_title">Текст уведомлений в строке состояния (Ticker)</string>
     <string name="ticker_disabled">Откл.</string>
     <string name="ticker_enabled">Только текст уведомлений</string>
     <string name="ticker_media_enabled">Текст уведомлений и названия песен</string>
@@ -571,5 +571,12 @@
   <string name="system_app_remover">Удаление сист. приложений</string>
   <string name="sizer_message_error">Не удалось удалить, проверьте наличие прав суперпользователя</string>
   <string name="sizer_message_success">Успешно</string>
+
+  <!-- QS footer warnings -->
+  <string name="qs_footer_warnings_title">Предупреждение в нижней части</string>
+  <string name="qs_footer_warnings_summary">Показывать предупреждение в нижней панели быстрых настроек, когда сеть контролируется приложениями или VPN</string>
+
+</resources> 
+
 </resources>
 
