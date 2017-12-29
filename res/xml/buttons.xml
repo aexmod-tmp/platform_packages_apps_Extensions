@@ -156,6 +156,12 @@
           android:key="home_key"
           android:title="@string/hardware_keys_home_key_title" >
 
+        <org.aospextended.extensions.preference.SystemSettingSwitchPreference
+            android:key="ring_home_button_behavior"
+            android:title="@string/ring_home_button_title"
+            android:summary="@string/ring_home_button_summary"
+            android:defaultValue="false" />
+
         <org.aospextended.extensions.preference.ActionPreference
             android:key="hwkeys_button_home_single_tap"
             android:summary="@string/hardware_keys_single_tap_summary"

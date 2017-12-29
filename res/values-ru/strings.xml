@@ -576,6 +576,9 @@
   <string name="qs_footer_warnings_title">Предупреждение в нижней части</string>
   <string name="qs_footer_warnings_summary">Показывать предупреждение в нижней панели быстрых настроек, когда сеть контролируется приложениями или VPN</string>
 
+  <string name="ring_home_button_title">Ответ на звонок кнопкой Домой</string>
+  <string name="ring_home_button_summary">При входящем звонке кнопка Домой используется для ответа</string>
+
 </resources> 
 
 </resources>

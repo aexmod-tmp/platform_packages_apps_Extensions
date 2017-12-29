@@ -39,5 +39,4 @@
             android:icon="@drawable/ic_notifications"
             android:title="@string/notifications_title" />
 
-
 </PreferenceScreen>
