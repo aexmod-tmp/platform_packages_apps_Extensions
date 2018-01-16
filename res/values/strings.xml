@@ -580,11 +580,6 @@
     <string name="wakeup_when_plugged_unplugged_title">Wake up on charge</string>
     <string name="wakeup_when_plugged_unplugged_summary">Wake up device if charger is plugged/unplugged.</string>
 
-    <string name="systemui_theme_style_title">UI style</string>
-    <string name="systemui_theme_style_auto">Wallpaper based</string>
-    <string name="systemui_theme_style_light">Light style</string>
-    <string name="systemui_theme_style_dark">Dark style</string>
-
     <!-- Immersive Recents -->
     <string name="immersive_recents_title">Immersive Recents</string>
     <string name="immersive_recents_summary">Change the view of the recents screen</string>

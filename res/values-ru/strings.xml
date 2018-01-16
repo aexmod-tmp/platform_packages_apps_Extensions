@@ -516,11 +516,6 @@
     <string name="pulse_solid_dimen_category">Настройки режима сплошных линий</string>
     <string name="pulse_custom_buttons_opacity_title">Прозрачность кнопок Smartbar</string>
 
-    <string name="systemui_theme_style_title">Стиль оформления</string>
-    <string name="systemui_theme_style_auto">Авто (по обоям)</string>
-    <string name="systemui_theme_style_light">Светлый</string>
-    <string name="systemui_theme_style_dark">Темный</string>
-
     <!-- Immersive Recents -->
     <string name="immersive_recents_title">Недавние приложения</string>
     <string name="immersive_recents_summary">Изменить вид недавних приложений</string>
@@ -578,8 +573,6 @@
 
   <string name="ring_home_button_title">Ответ на звонок кнопкой Домой</string>
   <string name="ring_home_button_summary">При входящем звонке кнопка Домой используется для ответа</string>
-
-</resources> 
 
 </resources>
 
