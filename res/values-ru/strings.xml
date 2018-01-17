@@ -585,8 +585,16 @@
   <string name="screenshot_type_title">Скриншот фрагмента</string>
   <string name="screenshot_type_partial">Скриншот выбранного фрагмента экрана при использовании кнопок громкости</string>
 
-  <!-- Pocket judge -->
-  <string name="pocket_judge_title">Режим в "Кармане"</string>
-  <string name="pocket_judge_summary">Блокировать экран и кнопки от случайного нажатия в кармане</string>
+    <!-- Ambient music -->
+  <string name="ambient_display_category">Опции Ambient Display</string>
+  <string name="force_ambient_for_media_pref_title">Тикер Ambient Music</string>
+  <string name="force_ambient_for_media_pref_summary">Конфигурация тикера Ambient Music</string>
+  <string name="ambient_ticker_footer">Эта функция позволяет отображать текущий трек на экране блокировки с включенным или включенным Ambient Display.\n\nВы можете выбрать один из двух макетов, нормальный и минимальный. Хотя эта функция использует Ambient display, она не зависит от него. Он может быть запущен без включения Ambient display принудительно.\n\nНормальный вид включает в себя часы на экране блокировки, дату и тикер.\n\nМинимальный вид включает только тикер в центре экрана.</string>
+  <string name="force_ambient_for_media_title">Выбор макета</string>
+  <string name="force_ambient_for_media_off">Отключено</string>
+  <string name="force_ambient_for_media_on">Нормальный</string>
+  <string name="force_ambient_for_media_on_forced">Нормальный (принудительно)</string>
+  <string name="force_ambient_for_media_on_forced_clean">Минимальный (принудительно)</string>
+
 </resources>
 

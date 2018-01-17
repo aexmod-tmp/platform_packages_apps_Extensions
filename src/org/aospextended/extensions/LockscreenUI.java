@@ -48,6 +48,9 @@ import com.android.settings.Utils;
 
 public class LockscreenUI extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
+    private ListPreference mAmbientTicker;
+
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,6 +59,13 @@ public class LockscreenUI extends SettingsPreferenceFragment implements OnPrefer
 
         final ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen prefSet = getPreferenceScreen();
+
+        mAmbientTicker = (ListPreference) findPreference("force_ambient_for_media");
+        int mode = Settings.System.getIntForUser(resolver,
+                Settings.System.FORCE_AMBIENT_FOR_MEDIA, 0, UserHandle.USER_CURRENT);
+        mAmbientTicker.setValue(Integer.toString(mode));
+        mAmbientTicker.setSummary(mAmbientTicker.getEntry());
+        mAmbientTicker.setOnPreferenceChangeListener(this);
 
     }
 
@@ -71,6 +81,16 @@ public class LockscreenUI extends SettingsPreferenceFragment implements OnPrefer
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
-        return false;
+        final ContentResolver resolver = getActivity().getContentResolver();
+        if (preference == mAmbientTicker) {
+    	    int mode = Integer.valueOf((String) objValue);
+    	    int index = mAmbientTicker.findIndexOfValue((String) objValue);
+    	    mAmbientTicker.setSummary(
+                mAmbientTicker.getEntries()[index]);
+    	    Settings.System.putIntForUser(resolver, Settings.System.FORCE_AMBIENT_FOR_MEDIA,
+                mode, UserHandle.USER_CURRENT);
+        return true;
+        }
+    return false;
     }
 }
