@@ -39,6 +39,58 @@
         android:summary="@string/lockscreen_qs_disabled_summary"
         android:defaultValue="false" />
 
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="category_custom_header"
+        android:title="@string/qs_appearance_category">
+
+        <org.aospextended.extensions.preference.SystemSettingSwitchPreference
+            android:key="status_bar_custom_header"
+            android:title="@string/status_bar_custom_header_title"
+            android:summary="@string/status_bar_custom_header_summary"
+            android:defaultValue="false" />
+
+        <ListPreference
+            android:key="custom_header_provider"
+            android:title="@string/custom_header_provider_title"
+            android:persistent="false"
+            android:entries="@array/custom_header_provider_entries"
+            android:entryValues="@array/custom_header_provider_values"
+            android:dependency="status_bar_custom_header" />
+
+        <ListPreference
+            android:key="daylight_header_pack"
+            android:title="@string/daylight_header_pack_title"
+            android:persistent="false"
+            android:dependency="status_bar_custom_header" />
+
+        <Preference
+            android:key="custom_header_browse"
+            android:title="@string/custom_header_browse_title"
+            android:summary="@string/custom_header_browse_summary"
+            android:persistent="false"
+            android:dependency="status_bar_custom_header" >
+            <intent android:action="android.intent.action.MAIN"
+                    android:targetPackage="org.omnirom.omnistyle"
+                    android:targetClass="org.omnirom.omnistyle.PickHeaderActivity" />
+        </Preference>
+
+    <org.aospextended.extensions.preference.CustomSeekBarPreference
+            android:key="status_bar_custom_header_shadow"
+            android:title="@string/status_bar_custom_header_shadow_title"
+            android:summary="@string/status_bar_custom_header_shadow_summary"
+            android:max="100"
+            settings:min="0"
+            settings:units="%"
+            android:persistent="false"
+            android:dependency="status_bar_custom_header" />
+
+    </PreferenceCategory>
+
+  <PreferenceCategory
+        android:key="qsset_misc_category"
+        android:title="@string/qs_misc_category">
 
 	<org.aospextended.extensions.preference.SystemSettingSwitchPreference
         android:key="qs_footer_warnings"
@@ -106,4 +158,5 @@
         settings:units="" />
 
     </PreferenceCategory>
+
 </PreferenceScreen>
