@@ -50,6 +50,11 @@
     	    android:summary="@string/three_finger_gesture_summary"
     	    android:defaultValue="false" />
 
+	<org.aospextended.extensions.preference.SystemSettingSwitchPreference
+    	    android:key="screenshot_type"
+    	    android:title="@string/screenshot_type_title"
+    	    android:summary="@string/screenshot_type_partial"
+    	    android:defaultValue="false" />
     </PreferenceCategory>
 
     <PreferenceCategory

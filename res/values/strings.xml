@@ -640,5 +640,9 @@
     <string name="three_finger_gesture">Three finger gesture</string>
     <string name="three_finger_gesture_summary">Swipe three finger to screenshot</string>
 
+    <!-- Partial Screenshot -->
+    <string name="screenshot_type_title">Partial screenshot</string>
+    <string name="screenshot_type_partial">Drag selection on the area for screenshot via volume keys</string>
+
 </resources>
 
