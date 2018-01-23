@@ -50,9 +50,11 @@ import com.android.settings.Utils;
 public class GeneralTweaks extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     private static final String INCALL_VIB_OPTIONS = "incall_vib_options";
+    private static final String SCREEN_OFF_ANIMATION = "screen_off_animation";
 
     private PreferenceCategory mLedsCategory;
     private Preference mChargingLeds;
+    private ListPreference mScreenOffAnimation;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -78,6 +80,14 @@ public class GeneralTweaks extends SettingsPreferenceFragment implements OnPrefe
         if (!Utils.isVoiceCapable(getActivity())) {
             prefSet.removePreference(incallVibCategory);
         }
+
+        mScreenOffAnimation = (ListPreference) findPreference(SCREEN_OFF_ANIMATION);
+        int screenOffStyle = Settings.System.getInt(resolver,
+                Settings.System.SCREEN_OFF_ANIMATION, 0);
+        mScreenOffAnimation.setValue(String.valueOf(screenOffStyle));
+        mScreenOffAnimation.setSummary(mScreenOffAnimation.getEntry());
+        mScreenOffAnimation.setOnPreferenceChangeListener(this);
+
     }
 
     @Override
@@ -92,7 +102,15 @@ public class GeneralTweaks extends SettingsPreferenceFragment implements OnPrefe
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-	 ContentResolver resolver = getActivity().getContentResolver();
-        return false;
+	ContentResolver resolver = getActivity().getContentResolver();
+        if (preference == mScreenOffAnimation) {
+            String value = (String) newValue;
+            Settings.System.putInt(resolver,
+                    Settings.System.SCREEN_OFF_ANIMATION, Integer.valueOf(value));
+            int valueIndex = mScreenOffAnimation.findIndexOfValue(value);
+            mScreenOffAnimation.setSummary(mScreenOffAnimation.getEntries()[valueIndex]);
+            return true;
+	}        
+	    return false;
     }
 }

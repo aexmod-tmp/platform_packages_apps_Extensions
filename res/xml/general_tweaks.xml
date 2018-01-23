@@ -43,6 +43,11 @@
             android:title="@string/wakeup_when_plugged_unplugged_title"
             android:summary="@string/wakeup_when_plugged_unplugged_summary"
             android:defaultValue="true" />
+	<ListPreference
+    	    android:key="screen_off_animation"
+    	    android:title="@string/screen_off_animation_title"
+    	    android:entries="@array/screen_off_animation_entries"
+    	    android:entryValues="@array/screen_off_animation_values" />
 
         <org.aospextended.extensions.preference.SystemSettingSwitchPreference
 	    android:key="three_finger_gesture"

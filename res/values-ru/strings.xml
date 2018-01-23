@@ -629,6 +629,11 @@
   <string name="faceunlock_title">Разблокировка FaceUnlock</string>
   <string name="faceunlock_summary">Автоматическая разблокировка с помощью Google FaceUnlock</string>
 
+    <!-- Screen Off animation -->
+  <string name="screen_off_animation_title">Анимация выключения экрана</string>
+  <string name="screen_off_animation_default">По умолчанию</string>
+  <string name="screen_off_animation_crt">ЭЛТ</string>
+  <string name="screen_off_animation_scale">Масштаб</string>
 
 </resources>
 
