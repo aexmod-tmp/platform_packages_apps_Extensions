@@ -82,6 +82,10 @@
         android:summary="@string/media_art_summary"
         android:defaultValue="false" />
 
+    <PreferenceCategory
+        android:key="lockscreen_ui_ambient_category"
+        android:title="@string/force_ambient_for_media_pref_title">
+
     <ListPreference
         android:key="force_ambient_for_media"
         android:title="@string/force_ambient_for_media_title"
@@ -90,4 +94,5 @@
 
     </PreferenceCategory>
 
+    </PreferenceCategory>
 </PreferenceScreen>
