@@ -581,9 +581,12 @@
   <!-- QS tile text visibility -->
   <string name="qs_tile_title_visibility_title">Отображать заголовки плиток</string>
 
-    <!-- Partial Screenshot -->
-    <string name="screenshot_type_title">Скриншот фрагмента</string>
-    <string name="screenshot_type_partial">Скриншот выбранного фрагмента экрана при использовании кнопок громкости</string>
+  <!-- Partial Screenshot -->
+  <string name="screenshot_type_title">Скриншот фрагмента</string>
+  <string name="screenshot_type_partial">Скриншот выбранного фрагмента экрана при использовании кнопок громкости</string>
 
+  <!-- Pocket judge -->
+  <string name="pocket_judge_title">Режим в "Кармане"</string>
+  <string name="pocket_judge_summary">Блокировать экран и кнопки от случайного нажатия в кармане</string>
 </resources>
 

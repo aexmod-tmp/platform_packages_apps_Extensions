@@ -644,5 +644,8 @@
     <string name="screenshot_type_title">Partial screenshot</string>
     <string name="screenshot_type_partial">Drag selection on the area for screenshot via volume keys</string>
 
+    <!-- Pocket judge -->
+    <string name="pocket_judge_title">Pocket detection</string>
+    <string name="pocket_judge_summary">Block screen and button inputs when device is in pocket</string>
 </resources>
 
