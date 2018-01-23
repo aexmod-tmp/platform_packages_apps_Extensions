@@ -596,5 +596,9 @@
   <string name="force_ambient_for_media_on_forced">Нормальный (принудительно)</string>
   <string name="force_ambient_for_media_on_forced_clean">Минимальный (принудительно)</string>
 
+    <!-- Quick QS scroller -->
+  <string name="qqs_scroll_title">Прокрутка маленьких плиток</string>
+  <string name="qqs_scroll_summary">Разрешить прокрутку маленьких плиток</string>
+
 </resources>
 

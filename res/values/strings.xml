@@ -660,5 +660,8 @@
     <string name="force_ambient_for_media_on_forced">Normal (forced)</string>
     <string name="force_ambient_for_media_on_forced_clean">Minimal (forced)</string>
 
+    <!-- Quick QS scroller -->
+    <string name="qqs_scroll_title">Quick scroll small tiles</string>
+    <string name="qqs_scroll_summary">Allow scrolling through the small QS tiles</string>
 </resources>
 
