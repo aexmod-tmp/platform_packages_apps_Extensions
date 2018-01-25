@@ -58,6 +58,12 @@
         android:summary="@string/double_tap_to_sleep_lockscreen_summary"
         android:defaultValue="true" />
 
+    <org.aospextended.extensions.preference.SystemSettingSwitchPreference
+        android:key="g_face_unlock_bypass"
+        android:title="@string/faceunlock_title"
+        android:summary="@string/faceunlock_summary"
+        android:defaultValue="false" />
+
     </PreferenceCategory>
 
         <PreferenceCategory

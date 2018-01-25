@@ -625,6 +625,10 @@
   <string name="qs_appearance_category">Заголовки</string>
   <string name="qs_misc_category">Разное</string>
 
+    <!-- Facelock -->
+  <string name="faceunlock_title">Разблокировка FaceUnlock</string>
+  <string name="faceunlock_summary">Автоматическая разблокировка с помощью Google FaceUnlock</string>
+
 
 </resources>
 

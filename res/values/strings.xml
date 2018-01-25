@@ -694,5 +694,9 @@
     <string name="custom_header_title">Header</string>
     <string name="qs_misc_category">Misc</string>
 
+    <!-- Facelock -->
+    <string name="faceunlock_title">Google FaceUnlock dismiss</string>
+    <string name="faceunlock_summary">Allow Google FaceUnlock to dismiss keyguard</string>
+
 </resources>
 
