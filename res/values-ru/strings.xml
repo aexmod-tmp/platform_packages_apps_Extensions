@@ -600,5 +600,12 @@
   <string name="qqs_scroll_title">Прокрутка маленьких плиток</string>
   <string name="qqs_scroll_summary">Разрешить прокрутку маленьких плиток</string>
 
+  <!-- lock screen visualizer -->
+  <string name="lockscreen_visualizer_title">Показать визуализацию музыки</string>
+  <string name="lockscreen_visualizer_summary">Визуализация на экране блокировки во время воспроизведения музыки (работает с большинством плееров)</string>
+
+  <string name="lock_screen_ambient_weather_title">Погода при Ambient Display</string>
+  <string name="lock_screen_ambient_weather_summary">Показывать погоду при Ambient Display</string>
+
 </resources>
 
