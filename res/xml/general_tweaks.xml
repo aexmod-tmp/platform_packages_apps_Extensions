@@ -83,16 +83,9 @@
 
     </PreferenceCategory>
 
-    <PreferenceCategory
-        android:key="light_category"
-        android:title="@string/light_category">
-
-     <Preference
-         android:key="battery_charging_light"
-         android:fragment="org.aospextended.extensions.BatteryLightSettings"
-         android:title="@string/battery_light_settings" />
-
-    </PreferenceCategory>
+  <PreferenceCategory
+        android:key="qsset_misc_category"
+        android:title="@string/qs_misc_category">
 
     <Preference
         android:key="suspend_actions"
@@ -108,5 +101,18 @@
          android:id="@+id/alarm_blocker"
          android:fragment="org.aospextended.extensions.AlarmBlocker"
          android:title="@string/alarm_blocker" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="light_category"
+        android:title="@string/light_category">
+
+     <Preference
+         android:key="battery_charging_light"
+         android:fragment="org.aospextended.extensions.BatteryLightSettings"
+         android:title="@string/battery_light_settings" />
+
+    </PreferenceCategory>
 
 </PreferenceScreen>
