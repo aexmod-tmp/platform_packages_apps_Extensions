@@ -36,6 +36,13 @@
 	android:icon="@drawable/ic_settings_date_time"
         android:fragment="org.aospextended.extensions.ClockOptions" />
 
+    <ListPreference
+        android:key="battery_style"
+        android:title="@string/battery_style_title"
+        android:summary="@string/battery_style_summary"
+        android:entries="@array/battery_style_entries"
+        android:entryValues="@array/battery_style_values" />
+
          <Preference
             android:key="traffic"
             android:fragment="org.aospextended.extensions.Traffic"
