@@ -152,7 +152,7 @@
     <string name="powermenu_restart">Перезапустить</string>
     <string name="powermenu_restart_recovery">Дополнительно</string>
     <string name="powermenu_airplane">Режим полёта</string>
-    <string name="powermenu_settings">Настройски</string>
+    <string name="powermenu_settings">Настройки</string>
     <string name="powermenu_lockdown">Блокировать устр.</string>
     <string name="powermenu_soundpanel">Звуковая панель</string>
     <string name="powermenu_users">Пользователи</string>
@@ -301,7 +301,7 @@
     <string name="incall_vibrate_disconnect_title">Вибрация при завершении звонка</string>
 
     <!-- Disabling FC notifications -->
-    <string name="disable_fc_notifications_title">Отключить уведомления о ошбиках(FC)</string>
+    <string name="disable_fc_notifications_title">Отключить уведомления о ошибках(FC)</string>
     <string name="disable_fc_notifications_summary">Это отключит все уведомления о системных ошибках при падении приложений</string>
 
     <!-- Statusbar ticker -->
