@@ -39,6 +39,7 @@
     <Preference
             android:key="battery_settings"
             android:title="@string/battery_style_category_title"
+	    android:icon="@drawable/ic_settings_battery"
             android:fragment="org.aospextended.extensions.StatusBarBattery" />
 
          <Preference
