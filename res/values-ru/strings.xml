@@ -818,5 +818,15 @@
     <!-- QuickSettings Panel Transparency -->
     <string name="qs_panel_alpha_title">Прозрачность</string>
 
+    <!-- StatusBar weather settings -->
+    <string name="statusbar_weather_title">Погода в строке состояния</string>
+    <string name="statusbar_weather_summary">Настройте через Быстрые настройки/Погода</string>
+    <string name="statusbar_weather_dialog_title">Стиль погоды в строке состояния</string>
+    <string name="status_bar_weather_hidden">Скрыть погоду</string>
+    <string name="status_bar_temperature_image_show_scale">Показывать температуру с единицами измерения и значком погоды</string>
+    <string name="status_bar_temperature_image_hide_scale">Показывать температуру со значком погоды</string>
+    <string name="status_bar_temperature_show_scale_hide_image">Показывать температуру с единицами измерения</string>
+    <string name="status_bar_temperature_hide_scale_hide_image">Показывать температуру без единиц измерения</string>
+    <string name="status_bar_show_image">Показывать значок погоды</string>
 </resources>
 

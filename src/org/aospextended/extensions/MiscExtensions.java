@@ -48,6 +48,9 @@ import com.android.settings.Utils;
 
 public class MiscExtensions extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
+    private static final String PREF_STATUS_BAR_WEATHER = "status_bar_show_weather_temp";
+    private ListPreference mStatusBarWeather;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,6 +59,19 @@ public class MiscExtensions extends SettingsPreferenceFragment implements OnPref
 
         final ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen prefSet = getPreferenceScreen();
+
+	// Status bar weather
+        mStatusBarWeather = (ListPreference) findPreference(PREF_STATUS_BAR_WEATHER);
+        int temperatureShow = Settings.System.getIntForUser(resolver,
+               Settings.System.STATUS_BAR_SHOW_WEATHER_TEMP, 0,
+               UserHandle.USER_CURRENT);
+        mStatusBarWeather.setValue(String.valueOf(temperatureShow));
+        if (temperatureShow == 0) {
+           mStatusBarWeather.setSummary(R.string.statusbar_weather_summary);
+        } else {
+           mStatusBarWeather.setSummary(mStatusBarWeather.getEntry());
+        }
+          mStatusBarWeather.setOnPreferenceChangeListener(this);
 
     }
 
@@ -71,6 +87,21 @@ public class MiscExtensions extends SettingsPreferenceFragment implements OnPref
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
+        final ContentResolver resolver = getActivity().getContentResolver();
+	if (preference == mStatusBarWeather) {
+            int temperatureShow = Integer.valueOf((String) objValue);
+            int index = mStatusBarWeather.findIndexOfValue((String) objValue);
+            Settings.System.putIntForUser(resolver,
+                   Settings.System.STATUS_BAR_SHOW_WEATHER_TEMP,
+                   temperatureShow, UserHandle.USER_CURRENT);
+            if (temperatureShow == 0) {
+                mStatusBarWeather.setSummary(R.string.statusbar_weather_summary);
+    	    } else {
+                mStatusBarWeather.setSummary(
+                mStatusBarWeather.getEntries()[index]);
+    	    }
+        return true;
+	}
         return false;
     }
 }
