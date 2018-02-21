@@ -32,6 +32,12 @@
             android:summary="@string/disable_fc_notifications_summary"
             android:defaultValue="false" />
 
+        <org.aospextended.extensions.preference.SecureSettingSwitchPreference
+    	    android:key="adb_notify"
+    	    android:title="@string/adb_notify_title"
+    	    android:summary="@string/adb_notify_summary"
+    	    android:defaultValue="true" />
+
         <org.aospextended.extensions.preference.SystemSettingSwitchPreference
             android:key="mtp_dirty_hack"
             android:title="@string/enable_mtp_dirtyhack_title"
