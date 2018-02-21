@@ -766,5 +766,8 @@
     <string name="smartbar_double_tap_sleep_title">Спящий режим</string>
     <string name="smartbar_double_tap_sleep_summary">Дважды коснитесь панели навигации для перевода устройства в спящий режим</string>
 
+    <string name="lockscreen_hw_home_title">Сканер отпечатков на экране блокировки</string>
+    <string name="lockscreen_hw_home_summary">Позволить быстро разблокировать телефон сканером отпечатков пальца, если не включена защита</string>
+
 </resources>
 

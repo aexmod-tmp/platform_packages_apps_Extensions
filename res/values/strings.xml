@@ -804,5 +804,9 @@
     <string name="battery_percent_none">Don\'t show</string>
     <string name="battery_percent_outside">Show near icon</string>
     <string name="battery_percent_inside">Show inside icon</string>
+
+    <string name="lockscreen_hw_home_title">FP sensor can dismiss lockscreen</string>
+    <string name="lockscreen_hw_home_summary">FP sensor can dismiss lockscreen when device in insecure mode</string>
+    
 </resources>
 
