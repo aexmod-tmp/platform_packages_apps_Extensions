@@ -64,8 +64,8 @@
         android:summary="@string/faceunlock_summary"
         android:defaultValue="false" />
 
-    <org.aospextended.extensions.preference.SystemSettingSwitchPreference
-        android:key="hw_menu_key_lockscreen"
+    <SwitchPreference
+        android:key="menukey_lockscreen"
         android:title="@string/lockscreen_hw_home_title"
         android:summary="@string/lockscreen_hw_home_summary"
         android:defaultValue="false" />

@@ -19,4 +19,7 @@
     <!-- Whether to display clock options -->
     <bool name="has_clock_options">true</bool>
 
+   <!-- Whether to show Menu key option on lockscreen -->
+    <bool name="LockMenuKey">false</bool>
+
 </resources>

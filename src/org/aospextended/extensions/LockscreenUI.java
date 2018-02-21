@@ -31,6 +31,7 @@ import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.PreferenceScreen;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.provider.Settings;
+import android.support.v14.preference.SwitchPreference;
 import android.util.Log;
 import android.view.WindowManagerGlobal;
 import android.view.IWindowManager;
@@ -50,6 +51,7 @@ public class LockscreenUI extends SettingsPreferenceFragment implements OnPrefer
 
     private ListPreference mAmbientTicker;
 
+    private SwitchPreference mLockMenuKey;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -66,6 +68,18 @@ public class LockscreenUI extends SettingsPreferenceFragment implements OnPrefer
         mAmbientTicker.setValue(Integer.toString(mode));
         mAmbientTicker.setSummary(mAmbientTicker.getEntry());
         mAmbientTicker.setOnPreferenceChangeListener(this);
+
+        Resources resources = getResources();
+
+        mLockMenuKey = (SwitchPreference) findPreference("menukey_lockscreen");
+        if (!resources.getBoolean(R.bool.LockMenuKey)) {
+	    ((PreferenceCategory) findPreference("lockscreen_ui_gestures_category")).removePreference(mLockMenuKey);
+	} else {
+        mLockMenuKey.setChecked((Settings.System.getInt(getContentResolver(),
+                Settings.System.HW_MENU_KEY_LOCKSCREEN, 0) == 1));
+        mLockMenuKey.setOnPreferenceChangeListener(this);
+        }
+
 
     }
 
@@ -90,7 +104,12 @@ public class LockscreenUI extends SettingsPreferenceFragment implements OnPrefer
     	    Settings.System.putIntForUser(resolver, Settings.System.FORCE_AMBIENT_FOR_MEDIA,
                 mode, UserHandle.USER_CURRENT);
         return true;
-        }
-    return false;
+        } else if (preference == mLockMenuKey) {
+            boolean value = (Boolean) objValue;
+            Settings.System.putInt(resolver,
+                    Settings.System.HW_MENU_KEY_LOCKSCREEN, value ? 1 : 0);
+            return true;
+	    }
+        return false;
     }
 }
