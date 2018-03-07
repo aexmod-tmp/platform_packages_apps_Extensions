@@ -320,6 +320,9 @@
     <string name="ticker_disabled">Откл.</string>
     <string name="ticker_enabled">Только текст уведомлений</string>
     <string name="ticker_media_enabled">Текст уведомлений и названия песен</string>
+    <string name="ticker_animation_mode_title">Стиль анимаций Ticker</string>
+    <string name="ticker_animation_mode_alpha_fade">Проявление</string>
+    <string name="ticker_animation_mode_scroll">Прокрутка</string>
 
     <string name="recents_icon_pack_title">Набор иконок</string>
     <string name="recents_icon_pack_summary">Применить пользовательский набор иконок для приложений в панели</string>
