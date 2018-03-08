@@ -52,6 +52,7 @@ public class ClockOptions extends SettingsPreferenceFragment implements OnPrefer
     private static final String PREF_CLOCK_DATE_STYLE = "clock_date_style";
     private static final String PREF_CLOCK_DATE_FORMAT = "clock_date_format";
     private static final String PREF_STATUS_BAR_CLOCK = "status_bar_show_clock";
+    private static final String STATUS_BAR_CLOCK_SECONDS = "status_bar_clock_seconds";
 
     public static final int CLOCK_DATE_STYLE_LOWERCASE = 1;
     public static final int CLOCK_DATE_STYLE_UPPERCASE = 2;
@@ -63,6 +64,7 @@ public class ClockOptions extends SettingsPreferenceFragment implements OnPrefer
     private ListPreference mClockDateStyle;
     private ListPreference mClockDateFormat;
     private SwitchPreference mStatusBarClock;
+    private SwitchPreference mStatusBarClockSeconds;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -124,6 +126,12 @@ public class ClockOptions extends SettingsPreferenceFragment implements OnPrefer
             mClockDateStyle.setEnabled(false);
             mClockDateFormat.setEnabled(false);
         }
+
+        mStatusBarClockSeconds = (SwitchPreference) findPreference(STATUS_BAR_CLOCK_SECONDS);
+        mStatusBarClockSeconds.setChecked((Settings.System.getInt(
+                getActivity().getApplicationContext().getContentResolver(),
+                Settings.System.STATUS_BAR_CLOCK_SECONDS, 0) == 1));
+        mStatusBarClockSeconds.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -216,7 +224,12 @@ public class ClockOptions extends SettingsPreferenceFragment implements OnPrefer
                 }
             }
             return true;
-        }
+        } else if (preference == mStatusBarClockSeconds) {
+            Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
+                    Settings.System.STATUS_BAR_CLOCK_SECONDS,
+                    (Boolean) newValue ? 1 : 0);
+            return true;
+         }
         return false;
     }
 

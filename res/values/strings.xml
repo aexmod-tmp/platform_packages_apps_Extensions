@@ -812,5 +812,7 @@
     <!-- ADB notification -->
     <string name="adb_notify_title">ADB notification</string>
     <string name="adb_notify_summary">Display a notification when android debugging is enabled</string>
+
+    <string name="status_bar_clock_seconds_title">Show seconds</string>
 </resources>
 
