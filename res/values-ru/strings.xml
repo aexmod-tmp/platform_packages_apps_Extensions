@@ -800,5 +800,9 @@
     <string name="battery_bar_style_reversed">В обратную сторону</string>
     <string name="statusbar_battery_bar_show_on_lock_screen_title">Показывать на экране блокировки</string>
 
+        <!-- Data disabled icon -->
+    <string name="data_disabled_icon_title">Показывать значок отключенной передачи данных</string>
+    <string name="data_disabled_icon_summary">Показывать крестик в значке уровня сети при отключенной передачи данных</string>
+
 </resources>
 
