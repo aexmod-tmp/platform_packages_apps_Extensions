@@ -813,6 +813,8 @@
     <string name="adb_notify_title">ADB notification</string>
     <string name="adb_notify_summary">Display a notification when android debugging is enabled</string>
 
+    <string name="status_bar_clock_seconds_title">Show seconds</string>
+
     <!-- Battery Bar -->
     <string name="battery_bar_title">Battery bar</string>
     <string name="battery_bar_summary">Display and customize battery bar above status bar</string>
@@ -836,5 +838,7 @@
     <string name="battery_bar_style_center_mirrored">Center-mirrored</string>
     <string name="battery_bar_style_reversed">Reversed</string>
     <string name="statusbar_battery_bar_show_on_lock_screen_title">Show on lockscreen</string>
+
+
 </resources>
 
