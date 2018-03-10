@@ -774,5 +774,28 @@
     <string name="adb_notify_title">Уведомление ADB</string>
     <string name="adb_notify_summary">Показывать уведомление когда включен режим отладки</string>
 
+    <!-- Battery Bar -->
+    <string name="battery_bar_title">Настройки полосы батареи</string>
+    <string name="battery_bar_summary">Отображение и настройка полосы батареи возле строки состояния или панели навигации</string>
+    <string name="battery_bar">Расположение полосы батареи</string>
+    <string name="battery_bar_no_navbar">Расположение полосы батареи</string>
+    <string name="battery_bar_thickness_title">Толщина полосы батареи</string>
+    <string name="battery_bar_style_title">Выравнивание полосы батареи</string>
+    <string name="battery_bar_blend_color_title">Смешать цвета</string>
+    <string name="battery_bar_blend_color_summary">Смешать полные/пустые цвета, соответствующие проценту заряда батареи</string>
+    <string name="battery_bar_blend_color_reverse_title">Обратное направление цвета</string>
+    <string name="battery_bar_blend_color_reverse_summary_off">Полный &#8594; пустой: красный &#8592; зеленый &#8592; синий &#8592; красный</string>
+    <string name="battery_bar_blend_color_reverse_summary_on">Полный &#8594; пустой: красный &#8594; зеленый &#8594; синий &#8594; красный</string>
+    <string name="battery_bar_color">Цвет полосы батареи</string>
+    <string name="battery_bar_battery_low_color">Цвет индикатора батареи при низком заряде аккумулятора</string>
+    <string name="battery_bar_use_charging_color">Пользовательский цвет индикатора при зарядке</string>
+    <string name="battery_bar_charging_color">Цвет индикатора батареи при зарядке</string>
+    <string name="battery_bar_animate_title">Анимация зарядки</string>
+    <string name="battery_bar_location_hide">Скрыта</string>
+    <string name="battery_bar_location_statusbar">Строка состояния</string>
+    <string name="battery_bar_style_regular">Обычное</string>
+    <string name="battery_bar_style_center_mirrored">По центру (зеркально)</string>
+    <string name="battery_bar_style_reversed">В обратную сторону</string>
+    <string name="statusbar_battery_bar_show_on_lock_screen_title">Показывать на экране блокировки</string>
 </resources>
 
