@@ -774,5 +774,6 @@
     <string name="adb_notify_title">Уведомление ADB</string>
     <string name="adb_notify_summary">Показывать уведомление когда включен режим отладки</string>
 
+    <string name="status_bar_clock_seconds_title">Показывать секунды</string>
 </resources>
 
