@@ -56,7 +56,7 @@
     <string name="general_tweaks_title">Основные настройки</string>
 
     <!-- Network traffic -->
-    <string name="traffic_title">Индикация траффика</string>
+    <string name="traffic_title">Индикация трафика</string>
 
     <!-- Misc Extensions -->
     <string name="misc_extensions_title">Различные расширения</string>
@@ -112,12 +112,12 @@
     <string name="battery_light_reallyfull_color">Полный заряд</string>
 
     <!-- Network traffic -->
-    <string name="network_traffic_title">Сетевой траффик</string>
-    <string name="network_traffic_type">Виберите тип траффика</string>
+    <string name="network_traffic_title">Сетевой трафик</string>
+    <string name="network_traffic_type">Виберите тип трафика</string>
     <string name="show_network_traffic_up">Исходящий</string>
     <string name="show_network_traffic_down">Входящий</string>
     <string name="show_network_traffic_all">Исходящий и входящий</string>
-    <string name="network_traffic_state_title">Отображение траффика в строке состоянии</string>
+    <string name="network_traffic_state_title">Отображение трафика в строке состоянии</string>
     <string name="network_traffic_autohide_threshold_title">Скрыть индикатор при пороге (KB/s)</string>
 
     <!-- Recents panel settings -->
