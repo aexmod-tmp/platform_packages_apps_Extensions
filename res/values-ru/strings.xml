@@ -800,13 +800,15 @@
     <string name="battery_bar_style_reversed">В обратную сторону</string>
     <string name="statusbar_battery_bar_show_on_lock_screen_title">Показывать на экране блокировки</string>
 
-        <!-- Data disabled icon -->
+    <!-- Data disabled icon -->
     <string name="data_disabled_icon_title">Показывать значок отключенной передачи данных</string>
     <string name="data_disabled_icon_summary">Показывать крестик в значке уровня сети при отключенной передачи данных</string>
 
-        <!-- Notification guts kill app button -->
+    <!-- Notification guts kill app button -->
     <string name="notification_guts_kill_app_button_title">Кнопка Закрыть приложение</string>
     <string name="notification_guts_kill_app_button_summary">Отображать кнопку закрытия приложения в уведомлениях по длительному нажатию</string>
+
+    <string name="screenshot_options_category">Опции скриншота</string>
 
 </resources>
 

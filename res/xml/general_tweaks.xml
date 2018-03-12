@@ -55,18 +55,6 @@
     	    android:entries="@array/screen_off_animation_entries"
     	    android:entryValues="@array/screen_off_animation_values" />
 
-        <org.aospextended.extensions.preference.SystemSettingSwitchPreference
-	    android:key="three_finger_gesture"
-    	    android:title="@string/three_finger_gesture"
-    	    android:summary="@string/three_finger_gesture_summary"
-    	    android:defaultValue="false" />
-
-	<org.aospextended.extensions.preference.SystemSettingSwitchPreference
-    	    android:key="screenshot_type"
-    	    android:title="@string/screenshot_type_title"
-    	    android:summary="@string/screenshot_type_partial"
-    	    android:defaultValue="false" />
-
     <!-- MediaScanner behavior on boot -->
     <ListPreference
         android:key="media_scanner_on_boot"
@@ -74,6 +62,27 @@
         android:entries="@array/media_scanner_on_boot_entries"
         android:entryValues="@array/media_scanner_on_boot_values" />
 
+    </PreferenceCategory>
+
+    <PreferenceCategory
+            android:key="screenshot_options"
+            android:title="@string/screenshot_options_category" >
+        <org.aospextended.extensions.preference.SystemSettingSwitchPreference
+                android:key="three_finger_gesture"
+                android:title="@string/three_finger_gesture"
+                android:summary="@string/three_finger_gesture_summary"
+                android:defaultValue="false" />
+
+        <org.aospextended.extensions.preference.SystemSettingSwitchPreference
+                android:key="screenshot_type"
+                android:title="@string/screenshot_type_title"
+                android:summary="@string/screenshot_type_partial"
+                android:defaultValue="false" />
+        <org.aospextended.extensions.preference.SystemSettingSwitchPreference
+                android:key="screenshot_crop_and_share"
+                android:title="@string/screenshot_crop_and_share_title"
+                android:summary="@string/screenshot_crop_and_share_summary"
+                android:defaultValue="false" />
     </PreferenceCategory>
 
     <PreferenceCategory
