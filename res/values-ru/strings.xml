@@ -804,5 +804,9 @@
     <string name="data_disabled_icon_title">Показывать значок отключенной передачи данных</string>
     <string name="data_disabled_icon_summary">Показывать крестик в значке уровня сети при отключенной передачи данных</string>
 
+        <!-- Notification guts kill app button -->
+    <string name="notification_guts_kill_app_button_title">Кнопка Закрыть приложение</string>
+    <string name="notification_guts_kill_app_button_summary">Отображать кнопку закрытия приложения в уведомлениях по длительному нажатию</string>
+
 </resources>
 
