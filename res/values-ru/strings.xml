@@ -814,5 +814,9 @@
     <string name="recents_kill_app_hide">Скрыто</string>
     <string name="recents_kill_app_show">Показывать</string>
     <string name="recents_kill_app_replace_close_app">Показывать, заменяя закрытие приложения</string>
+
+    <!-- QuickSettings Panel Transparency -->
+    <string name="qs_panel_alpha_title">Прозрачность</string>
+
 </resources>
 

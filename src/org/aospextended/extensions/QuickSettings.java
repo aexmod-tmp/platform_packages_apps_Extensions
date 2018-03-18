@@ -75,7 +75,11 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
     private static final String STATUS_BAR_CUSTOM_HEADER = "status_bar_custom_header";
     private static final String CUSTOM_HEADER_ENABLED = "status_bar_custom_header";
 
+    private static final String QS_PANEL_ALPHA = "qs_panel_alpha";
+
     private CustomSeekBarPreference mHeaderShadow;
+    private CustomSeekBarPreference mQsPanelAlpha;
+
     private ListPreference mDaylightHeaderPack;
     private ListPreference mHeaderProvider;       
     private Preference mHeaderBrowse;
@@ -104,6 +108,12 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
                 Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN, 1, UserHandle.USER_CURRENT);
         mQuickPulldown.setValue(String.valueOf(quickPulldownValue));
         updatePulldownSummary(quickPulldownValue);
+
+	mQsPanelAlpha = (CustomSeekBarPreference) findPreference(QS_PANEL_ALPHA);
+        int qsPanelAlpha = Settings.System.getIntForUser(resolver,
+                Settings.System.QS_PANEL_BG_ALPHA, 255, UserHandle.USER_CURRENT);
+        mQsPanelAlpha.setValue(qsPanelAlpha);
+        mQsPanelAlpha.setOnPreferenceChangeListener(this);
 
         mSmartPulldown = (ListPreference) findPreference(PREF_SMART_PULLDOWN);
         mSmartPulldown.setOnPreferenceChangeListener(this);
@@ -281,6 +291,12 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
             int realHeaderValue = (int) (((double) headerShadow / 100) * 255);
             Settings.System.putInt(getContentResolver(),
                     Settings.System.STATUS_BAR_CUSTOM_HEADER_SHADOW, realHeaderValue);
+            return true;
+	} else if (preference == mQsPanelAlpha) {
+            int bgAlpha = (Integer) newValue;
+            Settings.System.putIntForUser(getContentResolver(),
+                    Settings.System.QS_PANEL_BG_ALPHA, bgAlpha,
+                    UserHandle.USER_CURRENT);
             return true;
         } else if (preference == mHeaderProvider) {
             String value = (String) newValue;

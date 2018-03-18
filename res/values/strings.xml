@@ -846,5 +846,8 @@
     <string name="recents_kill_app_hide">Hide</string>
     <string name="recents_kill_app_show">Show</string>
     <string name="recents_kill_app_replace_close_app">Show, replace CLose Button</string>
+
+    <!-- QuickSettings Panel Transparency -->
+    <string name="qs_panel_alpha_title">Transparency</string>
 </resources>
 

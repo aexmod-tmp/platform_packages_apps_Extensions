@@ -20,6 +20,14 @@
         android:key="quick_settings_general_category"
         android:title="@string/general_category">
 
+	<org.aospextended.extensions.preference.CustomSeekBarPreference
+        android:key="qs_panel_alpha"
+        android:title="@string/qs_panel_alpha_title"
+        android:max="255"
+        settings:min="0"
+        settings:units=""
+        android:persistent="false" />
+
         <org.aospextended.extensions.preference.SecureSettingSwitchPreference
         android:key="qs_show_brightness"
         android:title="@string/qs_brightness_slider_title"
