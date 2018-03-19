@@ -842,5 +842,9 @@
 
     <string name="screenshot_options_category">Screenshot options</string>
 
+    <string name="recents_kill_app_title">Forced closе of app</string>
+    <string name="recents_kill_app_hide">Hide</string>
+    <string name="recents_kill_app_show">Show</string>
+    <string name="recents_kill_app_replace_close_app">Show, replace CLose Button</string>
 </resources>
 

@@ -87,10 +87,12 @@ public class RecentsUI extends SettingsPreferenceFragment implements OnPreferenc
     };
 
     private static final String RECENTS_CLEAR_ALL_LOCATION = "recents_clear_all_location";
+    private static final String RECENTS_KILL_APP_LOCATION = "recents_kill_app_location";
 
     private AlertDialog mDialog;
     private ListView mListView;
     private ListPreference mRecentsClearAllLocation;
+    private ListPreference mRecentKillAppButton;
     private SwitchPreference mRecentsClearAll;
 
     private static final String IMMERSIVE_RECENTS = "immersive_recents";
@@ -113,11 +115,16 @@ public class RecentsUI extends SettingsPreferenceFragment implements OnPreferenc
         mRecentsClearAllLocation.setSummary(mRecentsClearAllLocation.getEntry());
         mRecentsClearAllLocation.setOnPreferenceChangeListener(this);
 
-	mImmersiveRecents = (ListPreference) findPreference(IMMERSIVE_RECENTS);
+	    mImmersiveRecents = (ListPreference) findPreference(IMMERSIVE_RECENTS);
         mImmersiveRecents.setValue(String.valueOf(Settings.System.getInt(
                 resolver, Settings.System.IMMERSIVE_RECENTS, 0)));
         mImmersiveRecents.setSummary(mImmersiveRecents.getEntry());
         mImmersiveRecents.setOnPreferenceChangeListener(this);
+
+        mRecentKillAppButton = (ListPreference) findPreference(RECENTS_KILL_APP_LOCATION);
+        mRecentKillAppButton.setValue(String.valueOf(Settings.System.getIntForUser(resolver, Settings.System.RECENTS_KILL_APP_LOCATION, 1, UserHandle.USER_CURRENT)));
+        mRecentKillAppButton.setSummary(mRecentKillAppButton.getEntry());
+        mRecentKillAppButton.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -138,14 +145,20 @@ public class RecentsUI extends SettingsPreferenceFragment implements OnPreferenc
             Settings.System.putIntForUser(getActivity().getContentResolver(),
                     Settings.System.RECENTS_CLEAR_ALL_LOCATION, location, UserHandle.USER_CURRENT);
             mRecentsClearAllLocation.setSummary(mRecentsClearAllLocation.getEntries()[index]);
-        return true;
+            return true;
         } else if (preference == mImmersiveRecents) {
             Settings.System.putInt(getContentResolver(), Settings.System.IMMERSIVE_RECENTS,
                     Integer.valueOf((String) objValue));
             mImmersiveRecents.setValue(String.valueOf(objValue));
             mImmersiveRecents.setSummary(mImmersiveRecents.getEntry());
             return true;
-	}
+	    } else if (preference == mRecentKillAppButton){
+            int value = Integer.valueOf((String) objValue);
+            int index = mRecentKillAppButton.findIndexOfValue((String) objValue);
+            Settings.System.putIntForUser(getActivity().getContentResolver(), Settings.System.RECENTS_KILL_APP_LOCATION, value, UserHandle.USER_CURRENT);
+            mRecentKillAppButton.setSummary(mRecentKillAppButton.getEntries()[index]);
+            return true;
+        }
         return false;
     }
 

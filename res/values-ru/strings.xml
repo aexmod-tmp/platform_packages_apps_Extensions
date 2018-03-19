@@ -810,5 +810,9 @@
 
     <string name="screenshot_options_category">Опции скриншота</string>
 
+    <string name="recents_kill_app_title">Принудительное закрытие</string>
+    <string name="recents_kill_app_hide">Скрыто</string>
+    <string name="recents_kill_app_show">Показывать</string>
+    <string name="recents_kill_app_replace_close_app">Показывать, заменяя закрытие приложения</string>
 </resources>
 

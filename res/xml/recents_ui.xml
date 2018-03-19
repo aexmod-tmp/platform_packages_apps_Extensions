@@ -61,6 +61,13 @@
                  android:targetPackage="com.android.settings"
                  android:targetClass="org.aospextended.extensions.HAFRAppListActivity" />
      </PreferenceScreen>
+
+    <ListPreference
+        android:key="recents_kill_app_location"
+        android:title="@string/recents_kill_app_title"
+        android:entries="@array/recents_kill_app_entries"
+        android:entryValues="@array/recents_kill_app_values"
+        android:defaultValue="1"/>
     </PreferenceCategory>
 
 </PreferenceScreen>
