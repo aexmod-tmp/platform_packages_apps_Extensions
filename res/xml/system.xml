@@ -40,8 +40,8 @@
             android:title="@string/recents_ui_title" />
 
          <Preference
-            android:key="app_ops"
-            android:fragment="com.android.settings.applications.AppOpsSummary"
+            android:key="privacy_guard_manager"
+            android:fragment="com.android.settings.privacyguard.PrivacyGuardManager"
             android:icon="@drawable/ic_settings_appops"
             android:title="@string/app_ops_category" />
 
