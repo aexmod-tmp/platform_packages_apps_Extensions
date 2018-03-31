@@ -19,12 +19,12 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     
     <!-- General app strings -->
-	<string name="extensions_title">Расширения</string>
-	<string name="add">Добавить</string>
-	<string name="advanced">Дополнительно</string>
-	<string name="choose_app">Выбрать приложение</string>
-	<string name="general_category">Общие</string>
-	<string name="cancel">Отмена</string>
+    <string name="extensions_title">Расширения</string>
+    <string name="add">Добавить</string>
+    <string name="advanced">Дополнительно</string>
+    <string name="choose_app">Выбрать приложение</string>
+    <string name="general_category">Общие</string>
+    <string name="cancel">Отмена</string>
     <string name="gestures_category">Жесты</string>
     <string name="music_category">Музыка</string>
     <string name="security_category">Безопасность</string>
@@ -43,12 +43,16 @@
     <string name="colors_title">Цвета</string>
 
     <!-- Extensions categories -->
-	<string name="recents_category">Запущенные</string>
+    <string name="recents_category">Запущенные</string>
     <string name="status_bar_category">Строка состояния</string>
+    <string name="status_bar_category_summary">Изменить строку состояния</string>
     <string name="notifications_panel_category">Панель уведомлений</string>
     <string name="system_category">Система</string>
+    <string name="system_category_summary">Различные системные настройки</string>
     <string name="lockscreen_category">Экран блокировки</string>
+    <string name="lockscreen_category_summary">Изменить панель блокировки</string>
     <string name="panels_category">Панели</string>
+    <string name="panels_category_summary">Панели навигации, быстрого доступа, уведомлений</string>
     <string name="build_tweaks_summary_title">Расширенные настройки</string>
 
     <!-- Frags -->

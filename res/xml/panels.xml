@@ -18,25 +18,24 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/panels_category"
-    android:layout="@layout/tab"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-         <Preference
+         <org.aospextended.extensions.preference.CardviewPreference
             android:key="navbar_settings"
             android:fragment="org.aospextended.extensions.NavbarSettings"
             android:icon="@drawable/ic_navigation"
             android:title="@string/navigationbar_settings_title" />
 
-         <Preference
+         <org.aospextended.extensions.preference.CardviewPreference
             android:key="quick_settings"
             android:fragment="org.aospextended.extensions.QuickSettings"
             android:icon="@drawable/ic_quick_settings"
             android:title="@string/quick_settings_title" />
 
-         <Preference
+         <org.aospextended.extensions.preference.CardviewPreference
             android:key="notifications"
             android:fragment="org.aospextended.extensions.Notifications"
-            android:icon="@drawable/ic_notifications"
+            android:icon="@drawable/ic_notification"
             android:title="@string/notifications_title" />
 
 </PreferenceScreen>
