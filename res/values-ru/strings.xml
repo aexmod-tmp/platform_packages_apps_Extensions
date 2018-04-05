@@ -54,6 +54,8 @@
     <string name="panels_category">Панели</string>
     <string name="panels_category_summary">Панели навигации, быстрого доступа, уведомлений</string>
     <string name="build_tweaks_summary_title">Расширенные настройки</string>
+    <string name="system_animations">Анимации системы</string>
+    <string name="listview">Анимация списков</string>
 
     <!-- Frags -->
     <!-- General Tweaks -->
@@ -88,6 +90,10 @@
 
     <!-- App Ops -->
     <string name="app_ops_category">Операции в приложениях</string>
+
+
+    <!-- Animations -->
+    <string name="animations_title">Анимация</string>
 
     <!-- App info dialog -->
     <string name="extensions_dialog_title">Help us help you!</string>
@@ -628,7 +634,6 @@
   <string name="custom_header_title">Заголовок</string>
   <string name="qs_appearance_category">Заголовки</string>
   <string name="qs_misc_category">Разное</string>
-
     <!-- Facelock -->
   <string name="faceunlock_title">Разблокировка FaceUnlock</string>
   <string name="faceunlock_summary">Автоматическая разблокировка с помощью Google FaceUnlock</string>
@@ -869,6 +874,8 @@
     <string name="toast_Translucent_animation">Прозрачность</string>
     <string name="toast_SlideLeftRight_animation">Слайд слева направо</string>
     <string name="toast_SlideRightLeft_animation">Слайд справа налево</string>
+    <string name="toast">Всплывающие уведомления</string>
+
     <!-- ListView animation -->
     <string name="listview_animation_title">Анимация списков</string>
     <string name="listview_off">По умолчанию</string>
@@ -902,5 +909,10 @@
     <string name="pref_scrollingcache_default_disable">Отключить по умолчанию</string>
     <string name="pref_scrollingcache_force_disable">Отключить принудительно</string>
 
+    <!-- System theme -->
+    <string name="accent_picker_dialog_title">Выберите цвет акцента</string>
+    <string name="theme_accent_picker_title">Цвет акцента</string>
+    <string name="theme_accent_picker_summary">Выбор цвета акцента темы</string>
+    <string name="theme_accent_picker_default">По умолчанию</string>
 </resources>
 
