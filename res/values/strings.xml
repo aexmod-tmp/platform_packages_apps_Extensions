@@ -532,10 +532,6 @@
     <string name="fprint_error_vib_title">Fingerprint error vibration</string>
     <string name="fprint_error_vib_summary">Vibrate on error fingerprint authentication</string>
 
-    <!-- MTP Dirty Hack -->
-    <string name="enable_mtp_dirtyhack_title">MTP instead Charging</string>
-    <string name="enable_mtp_dirtyhack_summary">Enable MTP instead Charging after connect to PC</string>
-
     <!-- Hardware keys -->
     <string name="hardware_keys_home_key_title">Home button</string>
     <string name="hardware_keys_menu_key_title">Fingerprint sensor</string>

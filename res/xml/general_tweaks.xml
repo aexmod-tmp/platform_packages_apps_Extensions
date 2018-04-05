@@ -38,12 +38,6 @@
     	    android:summary="@string/adb_notify_summary"
     	    android:defaultValue="true" />
 
-        <org.aospextended.extensions.preference.SystemSettingSwitchPreference
-            android:key="mtp_dirty_hack"
-            android:title="@string/enable_mtp_dirtyhack_title"
-            android:summary="@string/enable_mtp_dirtyhack_summary"
-            android:defaultValue="true" />
-
         <org.aospextended.extensions.preference.GlobalSettingSwitchPreference
             android:key="wake_when_plugged_or_unplugged"
             android:title="@string/wakeup_when_plugged_unplugged_title"

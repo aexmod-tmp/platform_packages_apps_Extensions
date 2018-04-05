@@ -333,10 +333,6 @@
     <string name="fprint_error_vib_title">Вибрация при ошибке авторизации</string>
     <string name="fprint_error_vib_summary">Вибрировать при ошибке авторизации отпечатком пальца</string>
 
-    <!-- MTP Dirty Hack -->
-    <string name="enable_mtp_dirtyhack_title">MTP вместо Зарядки</string>
-    <string name="enable_mtp_dirtyhack_summary">Включить MTP вместо Зарядки при подключении к ПК</string>
-
     <!-- Torch Power button gestures -->
     <string name="torch_power_button_gesture_title">Фонарик по кнопке питания</string>
     <string name="torch_power_button_gesture_none">Выключено</string>
