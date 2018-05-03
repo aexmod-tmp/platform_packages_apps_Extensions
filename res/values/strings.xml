@@ -953,6 +953,9 @@
     <string name="flash_on_call_delay_title">Flash pulse rate</string>
 
     <string name="dialer_title">Dialer</string>
+
+    <string name="weather_title">Weather</string>
+    <string name="weather_summary">Weather settings</string>
 </resources>
 
 

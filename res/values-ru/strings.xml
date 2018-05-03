@@ -919,5 +919,8 @@
     <string name="flash_on_call_delay_title">Частота пульсации фонарика</string>
 
     <string name="dialer_title">Телефон</string>
+
+    <string name="weather_title">Погода</string>
+    <string name="weather_summary">Настройки погоды</string>
 </resources>
 

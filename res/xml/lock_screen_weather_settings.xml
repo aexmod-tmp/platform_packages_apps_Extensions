@@ -30,21 +30,4 @@
         android:defaultValue="true"
         android:dependency="lock_screen_show_weather" />
 
-    <ListPreference
-       android:key="weather_icon_pack"
-       android:title="@string/weather_icon_pack_title"
-       android:dependency="lock_screen_show_weather"
-       android:persistent="false" />
-
-    <Preference
-            android:key="omnijaws"
-            android:title="@string/weather_config_title"
-            android:dependency="lock_screen_show_weather"
-            android:persistent="false">
-
-        <intent android:action="android.intent.action.MAIN"
-                android:targetPackage="org.omnirom.omnijaws"
-                android:targetClass="org.omnirom.omnijaws.SettingsActivityService" />
-    </Preference>
-
 </PreferenceScreen>

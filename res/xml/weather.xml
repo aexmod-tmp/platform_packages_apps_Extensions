@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title="@string/weather_title">
+
+
+    <ListPreference
+        android:key="weather_icon_pack"
+        android:title="@string/weather_icon_pack_title"
+        android:persistent="false" />
+
+    <Preference
+        android:key="omnijaws"
+        android:title="@string/weather_config_title"
+        android:persistent="false">
+
+        <intent android:action="android.intent.action.MAIN"
+            android:targetPackage="org.omnirom.omnijaws"
+            android:targetClass="org.omnirom.omnijaws.SettingsActivityService" />
+    </Preference>
+
+</PreferenceScreen>

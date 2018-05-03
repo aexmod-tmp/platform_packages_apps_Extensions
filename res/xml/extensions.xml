@@ -43,4 +43,11 @@
     android:summary="@string/lockscreen_category_summary"
     android:fragment="org.aospextended.extensions.tabs.Lockscreen"/>
 
+    <org.aospextended.extensions.preference.CardviewPreference
+        android:fragment="org.aospextended.extensions.Weather"
+        android:icon="@drawable/ic_weather"
+        android:key="weather_generic"
+        android:summary="@string/weather_summary"
+        android:title="@string/weather_title"/>
+
 </PreferenceScreen>
