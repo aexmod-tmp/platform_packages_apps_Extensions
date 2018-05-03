@@ -100,6 +100,27 @@
 
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:key="flash_on_call_options"
+        android:title="@string/flash_on_call_category" >
+
+        <org.aospextended.extensions.preference.SystemSettingSwitchPreference
+            android:key="flash_on_call_waiting"
+            android:title="@string/flash_on_call_title"
+            android:defaultValue="false" />
+
+        <org.aospextended.extensions.preference.CustomSeekBarPreference
+            android:key="flash_on_call_waiting_delay"
+            android:max="1000"
+            android:persistent="false"
+            android:title="@string/flash_on_call_delay_title"
+            settings:min="50"
+            settings:units="ms"
+            settings:interval="50"
+            android:dependency="flash_on_call_waiting"/>
+
+    </PreferenceCategory>
+
   <PreferenceCategory
         android:key="qsset_misc_category"
         android:title="@string/qs_misc_category">

@@ -913,5 +913,9 @@
     <string name="theme_accent_picker_title">Цвет акцента</string>
     <string name="theme_accent_picker_summary">Выбор цвета акцента темы</string>
     <string name="theme_accent_picker_default">По умолчанию</string>
+
+    <string name="flash_on_call_category">Пульсация фонариком</string>
+    <string name="flash_on_call_title">Пульсация фонариком при входящем вызове</string>
+    <string name="flash_on_call_delay_title">Частота пульсации фонарика</string>
 </resources>
 
