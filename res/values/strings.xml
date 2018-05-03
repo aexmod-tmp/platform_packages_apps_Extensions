@@ -951,6 +951,8 @@
     <string name="flash_on_call_category">Pulse flash</string>
     <string name="flash_on_call_title">Pulse flash on incoming call</string>
     <string name="flash_on_call_delay_title">Flash pulse rate</string>
+
+    <string name="dialer_title">Dialer</string>
 </resources>
 
 

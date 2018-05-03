@@ -34,17 +34,14 @@ import org.aospextended.extensions.preference.CustomSeekBarPreference;
 
 public class GeneralTweaks extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
-    private static final String INCALL_VIB_OPTIONS = "incall_vib_options";
+
     private static final String SCREEN_OFF_ANIMATION = "screen_off_animation";
     private static final String MEDIA_SCANNER_ON_BOOT = "media_scanner_on_boot";
-    private static final String FLASH_ON_CALL_WAITING_DELAY = "flash_on_call_waiting_delay";
 
     private PreferenceCategory mLedsCategory;
     private Preference mChargingLeds;
     private ListPreference mScreenOffAnimation;
     private ListPreference mMSOB;
-
-    private CustomSeekBarPreference mFlashOnCallWaitingDelay;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -66,11 +63,6 @@ public class GeneralTweaks extends SettingsPreferenceFragment implements OnPrefe
             prefSet.removePreference(mLedsCategory);
         }
 
-        PreferenceCategory incallVibCategory = (PreferenceCategory) findPreference(INCALL_VIB_OPTIONS);
-        if (!Utils.isVoiceCapable(getActivity())) {
-            prefSet.removePreference(incallVibCategory);
-        }
-
         mScreenOffAnimation = (ListPreference) findPreference(SCREEN_OFF_ANIMATION);
         int screenOffStyle = Settings.System.getInt(resolver,
                 Settings.System.SCREEN_OFF_ANIMATION, 0);
@@ -85,10 +77,6 @@ public class GeneralTweaks extends SettingsPreferenceFragment implements OnPrefe
         mMSOB.setValue(String.valueOf(mMSOBValue));
         mMSOB.setSummary(mMSOB.getEntry());
         mMSOB.setOnPreferenceChangeListener(this);
-
-        mFlashOnCallWaitingDelay = (CustomSeekBarPreference) findPreference(FLASH_ON_CALL_WAITING_DELAY);
-        mFlashOnCallWaitingDelay.setValue(Settings.System.getInt(resolver, Settings.System.FLASH_ON_CALLWAITING_DELAY, 200));
-        mFlashOnCallWaitingDelay.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -103,7 +91,7 @@ public class GeneralTweaks extends SettingsPreferenceFragment implements OnPrefe
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-	ContentResolver resolver = getActivity().getContentResolver();
+        ContentResolver resolver = getActivity().getContentResolver();
         if (preference == mScreenOffAnimation) {
             String value = (String) newValue;
             Settings.System.putInt(resolver,
@@ -111,16 +99,12 @@ public class GeneralTweaks extends SettingsPreferenceFragment implements OnPrefe
             int valueIndex = mScreenOffAnimation.findIndexOfValue(value);
             mScreenOffAnimation.setSummary(mScreenOffAnimation.getEntries()[valueIndex]);
             return true;
-	} else if (preference == mMSOB) {
+        } else if (preference == mMSOB) {
             int value = Integer.parseInt(((String) newValue).toString());
             Settings.System.putInt(resolver,
                     Settings.System.MEDIA_SCANNER_ON_BOOT, value);
             mMSOB.setValue(String.valueOf(value));
             mMSOB.setSummary(mMSOB.getEntries()[value]);
-            return true; 
-	} else if (preference == mFlashOnCallWaitingDelay) {
-            int val = (Integer) newValue;
-            Settings.System.putInt(getContentResolver(), Settings.System.FLASH_ON_CALLWAITING_DELAY, val);
             return true;
         }
 	    return false;

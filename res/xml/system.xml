@@ -56,4 +56,9 @@
         android:key="systemappremover"
         android:title="@string/system_app_remover"/>
 
+    <org.aospextended.extensions.preference.CardviewPreference
+        android:fragment="org.aospextended.extensions.Dialer"
+        android:icon="@drawable/ic_phone_classic"
+        android:key="dialer"
+        android:title="@string/dialer_title"/>
 </PreferenceScreen>

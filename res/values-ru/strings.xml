@@ -917,5 +917,7 @@
     <string name="flash_on_call_category">Пульсация фонариком</string>
     <string name="flash_on_call_title">Пульсация фонариком при входящем вызове</string>
     <string name="flash_on_call_delay_title">Частота пульсации фонарика</string>
+
+    <string name="dialer_title">Телефон</string>
 </resources>
 
