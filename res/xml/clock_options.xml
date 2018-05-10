@@ -15,7 +15,6 @@
 -->
 
 <PreferenceScreen
-    android:title="@string/status_bar_clock_title"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/status_bar_show_clock_title" >
