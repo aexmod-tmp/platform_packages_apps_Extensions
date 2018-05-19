@@ -51,6 +51,9 @@ public class LockscreenUI extends SettingsPreferenceFragment implements OnPrefer
 
     private ListPreference mAmbientTicker;
 
+    private ListPreference mLockscreenClockSelection;
+    private ListPreference mLockscreenDateSelection;
+
     private SwitchPreference mLockMenuKey;
 
     @Override
@@ -80,6 +83,19 @@ public class LockscreenUI extends SettingsPreferenceFragment implements OnPrefer
         mLockMenuKey.setOnPreferenceChangeListener(this);
         }
 
+	mLockscreenClockSelection = (ListPreference) findPreference("lockscreen_clock_selection");
+        int clockSelection = Settings.System.getIntForUser(resolver,
+                Settings.System.LOCKSCREEN_CLOCK_SELECTION, 0, UserHandle.USER_CURRENT);
+        mLockscreenClockSelection.setValue(String.valueOf(clockSelection));
+        mLockscreenClockSelection.setSummary(mLockscreenClockSelection.getEntry());
+        mLockscreenClockSelection.setOnPreferenceChangeListener(this);
+
+	mLockscreenDateSelection = (ListPreference) findPreference("lockscreen_date_selection");
+        int dateSelection = Settings.System.getIntForUser(resolver,
+                Settings.System.LOCKSCREEN_DATE_SELECTION, 0, UserHandle.USER_CURRENT);
+        mLockscreenDateSelection.setValue(String.valueOf(dateSelection));
+        mLockscreenDateSelection.setSummary(mLockscreenDateSelection.getEntry());
+        mLockscreenDateSelection.setOnPreferenceChangeListener(this);
 
     }
 
@@ -103,7 +119,21 @@ public class LockscreenUI extends SettingsPreferenceFragment implements OnPrefer
                 mAmbientTicker.getEntries()[index]);
     	    Settings.System.putIntForUser(resolver, Settings.System.FORCE_AMBIENT_FOR_MEDIA,
                 mode, UserHandle.USER_CURRENT);
-        return true;
+    	    return true;
+	} else if (preference == mLockscreenClockSelection) {
+            int clockSelection = Integer.valueOf((String) objValue);
+            int index = mLockscreenClockSelection.findIndexOfValue((String) objValue);
+            Settings.System.putIntForUser(resolver,
+                    Settings.System.LOCKSCREEN_CLOCK_SELECTION, clockSelection, UserHandle.USER_CURRENT);
+            mLockscreenClockSelection.setSummary(mLockscreenClockSelection.getEntries()[index]);
+            return true;
+	} else if (preference == mLockscreenDateSelection) {
+            int dateSelection = Integer.valueOf((String) objValue);
+            int index = mLockscreenDateSelection.findIndexOfValue((String) objValue);
+            Settings.System.putIntForUser(resolver,
+                    Settings.System.LOCKSCREEN_DATE_SELECTION, dateSelection, UserHandle.USER_CURRENT);
+            mLockscreenDateSelection.setSummary(mLockscreenDateSelection.getEntries()[index]);
+            return true;
         } else if (preference == mLockMenuKey) {
             boolean value = (Boolean) objValue;
             Settings.System.putInt(resolver,

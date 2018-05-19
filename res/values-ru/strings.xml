@@ -965,5 +965,18 @@
     <string name="slim_blacklist_apps_summary">Скрытые приложения</string>
     <string name="slim_blacklist_add_apps_title">Добавить приложение</string>
     <string name="slim_blacklist_add_apps_summary">Нажмите здесь, чтобы добавить, нажмите на добавленное приложение, чтобы удалить его</string>
+
+    <string name="lockscreen_date_selection_title">Стиль даты</string>
+    <string name="lockscreen_date_selection_default">По умолчанию</string>
+    <string name="lockscreen_date_selection_str_box">Полупрозрачный</string>
+    <string name="lockscreen_date_selection_str_round">Полупрозрачный скругленный</string>
+    <string name="lockscreen_clock_selection_title">Стиль часов</string>
+    <string name="lockscreen_clock_selection_digital">По умолчанию</string>
+    <string name="lockscreen_clock_selection_digital_bold">Цифровой (жирный)</string>
+    <string name="lockscreen_clock_selection_analog">Аналоговый</string>
+    <string name="lockscreen_clock_selection_analog_deadpool">Аналоговый (Deadpool)</string>
+    <string name="lockscreen_clock_selection_sammy">Sammy</string>
+    <string name="lockscreen_clock_selection_sammy_bold">Sammy (жирный)</string>
+
 </resources>
 
