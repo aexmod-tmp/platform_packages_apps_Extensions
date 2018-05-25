@@ -930,5 +930,40 @@
     <string name="qs_running_services_title">Иконка запущенных сервисов</string>
     <string name="qs_running_services_summary">Убрать иконку запущенных сервисов</string>
 
+    <string name="chooser_activity_blacklist_title">Chooser Activity blacklist</string>
+    <string name="chooser_activity_blacklist_summary">Не показывать приложения при нажатии на кнопку Поделиться</string>
+    <string name="chooser_activity_blacklist_cat_title">Чёрный список</string>
+    <string name="chooser_activity_blacklist_pref_title">Добавить приложение</string>
+    <string name="chooser_activity_blacklist_pref_summary">Нажмите здесь, чтобы добавить, нажмите на добавленное приложение, чтобы удалить его</string>
+
+    <!-- Slim Recents panel -->
+    <string name="slim_recents_title">Панель недавних приложений Slim</string>
+    <string name="use_slim_recents_title">Использовать альтернативную панель недавних приложений</string>
+    <string name="use_slim_recents_summary">Использовать панель недавних приложений Slim вместо по умолчанию</string>
+    <string name="slim_recents_settings_title">Настройки панели недавних приложений Slim</string>
+    <string name="slim_recents_settings_summary">Посмотреть настройки панели недавних приложений Slim</string>
+    <string name="recents_max_apps_title">Максимально допустимое количество приложений</string>
+    <string name="recent_panel_scale_title">Размер</string>
+    <string name="recent_panel_expanded_mode_title">Предварительный просмотр расширенного режима</string>
+    <string name="recent_panel_expanded_mode_summary">Расширенный предпросмотр недавних приложений</string>
+    <string name="recent_panel_expanded_mode_auto">Авто (по умолчанию)</string>
+    <string name="recent_panel_expanded_mode_always">Все превью</string>
+    <string name="recent_panel_expanded_mode_never">Выключено</string>
+    <string name="recent_panel_bg_color_title">Цвет фона панели</string>
+    <string name="recent_card_bg_color_title">Цвет фона карточки</string>
+    <string name="recent_reset_title">Сбросить к настройкам по умолчанию</string>
+    <string name="recent_reset_confirm">Вы уверены, что хотите сбросить цвет фона недавних приложений Slim?</string>
+    <string name="default_auto_string">По умолчанию</string>
+    <string name="slim_icon_pack_title">Набор значков</string>
+    <string name="slim_icon_pack_summary">Применить пользовательский набор значков для приложений в панели</string>
+    <string name="slim_recents_corner_radius_title">Использовать закругленные углы для карточек</string>
+    <!-- ATTENTION: RTL languages need to replace left with right -->
+    <string name="recent_panel_lefty_mode_title">Отображать слева</string>
+    <string name="recent_panel_lefty_mode_summary">Показывать панель недавних приложений у левого края</string>
+    <string name="slim_blacklist_apps_cat_title">Чёрный список</string>
+    <string name="slim_blacklist_apps_title">Черный список приложений</string>
+    <string name="slim_blacklist_apps_summary">Скрытые приложения</string>
+    <string name="slim_blacklist_add_apps_title">Добавить приложение</string>
+    <string name="slim_blacklist_add_apps_summary">Нажмите здесь, чтобы добавить, нажмите на добавленное приложение, чтобы удалить его</string>
 </resources>
 
